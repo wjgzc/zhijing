@@ -31,10 +31,10 @@ interface ChatCompletionRequest {
  * AI 聊天服务配置
  */
 export interface AiServiceConfig {
-  /** API 端点地址（OpenAI兼容接口） */
+  /** API 端点地址（OpenAI兼容接口，或自有后端代理地址） */
   apiUrl: string;
-  /** API 密钥 */
-  apiKey: string;
+  /** API 密钥（经后端代理转发时可为空，直接连 DeepSeek 时才需要） */
+  apiKey?: string;
   /** 模型名称 */
   model: string;
   /** 系统提示词 */
@@ -54,7 +54,7 @@ export class AiChatService {
   constructor(config: AiServiceConfig) {
     this.config = {
       apiUrl: config.apiUrl,
-      apiKey: config.apiKey,
+      apiKey: config.apiKey ?? '',
       model: config.model,
       systemPrompt: config.systemPrompt ?? '你是一个友好的AI学习助手，请用中文回答。',
       timeout: config.timeout ?? 30000
@@ -124,12 +124,17 @@ export class AiChatService {
    */
   private async httpPost(url: string, body: ChatCompletionRequest): Promise<string> {
     return new Promise<string>((resolve, reject) => {
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json'
+      };
+      // 只有配置了 key 才带 Authorization（经后端代理转发时不需要）
+      if (this.config.apiKey) {
+        headers['Authorization'] = `Bearer ${this.config.apiKey}`;
+      }
+
       const requestOptions: http.HttpRequestOptions = {
         method: http.RequestMethod.POST,
-        header: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${this.config.apiKey}`
-        },
+        header: headers,
         extraData: JSON.stringify(body) as string,
         connectTimeout: this.config.timeout ?? 30000,
         readTimeout: this.config.timeout ?? 30000,

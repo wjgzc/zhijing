@@ -1,10 +1,8 @@
 import { promptAction } from '@kit.ArkUI';
 import { switchTab } from '../utils/TabSwitch';
 import { AiChatService, ChatMessage, AiServiceConfig } from '../services/AiChatService';
-
 const AI_CONFIG: AiServiceConfig = {
-  apiUrl: 'https://api.deepseek.com/v1/chat/completions',
-  apiKey: 'sk-441bc33ebf184f2f88845f331c2234d7',
+  apiUrl: 'http://192.168.1.4:3000/chat',
   model: 'deepseek-chat',
   systemPrompt: '你是一个友好的AI学习助手，名叫"知径Agent"，专门帮助用户规划学习路径、解答学习问题。请用中文回答，回答简洁有条理。'
 };

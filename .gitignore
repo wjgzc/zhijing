@@ -1,6 +1,7 @@
 /node_modules
 /oh_modules
 /local.properties
+.env
 /.idea
 **/build
 /.hvigor
@@ -10,3 +11,6 @@
 /.clang-tidy
 **/.test
 /.appanalyzer
+/ww/
+__pycache__/
+*.pyc

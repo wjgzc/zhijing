@@ -1,0 +1,1124 @@
+{
+  "nodes": [
+    {
+      "id": 4,
+      "labels": [
+        "Knowledge",
+        "Stack"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "栈和队列",
+        "name": "栈的基本概念",
+        "weight": 1,
+        "id": "Stk01",
+        "introduction": "后进先出的线性表"
+      }
+    },
+    {
+      "id": 5,
+      "labels": [
+        "Knowledge",
+        "Queue"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "栈和队列",
+        "name": "队列的基本概念",
+        "weight": 1,
+        "id": "Q01",
+        "introduction": "先进先出的线性表"
+      }
+    },
+    {
+      "id": 6,
+      "labels": [
+        "Knowledge",
+        "Stack"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "栈和队列",
+        "name": "顺序栈与链栈",
+        "weight": 1,
+        "id": "Stk02",
+        "introduction": "栈的顺序和链式存储"
+      }
+    },
+    {
+      "id": 7,
+      "labels": [
+        "Knowledge",
+        "Queue"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "chapter": "栈和队列",
+        "name": "循环队列",
+        "weight": 2,
+        "id": "Q02",
+        "introduction": "解决假溢出的队列存储结构"
+      }
+    },
+    {
+      "id": 8,
+      "labels": [
+        "Knowledge",
+        "String"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "串",
+        "name": "串的基本概念",
+        "weight": 1,
+        "id": "Str01",
+        "introduction": "由零个或多个字符组成的有限序列"
+      }
+    },
+    {
+      "id": 9,
+      "labels": [
+        "Knowledge",
+        "String"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "chapter": "串",
+        "name": "KMP算法",
+        "weight": 3,
+        "id": "Str02",
+        "introduction": "一种高效的字符串模式匹配算法"
+      }
+    },
+    {
+      "id": 10,
+      "labels": [
+        "Knowledge",
+        "Search"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "查找",
+        "name": "顺序查找与折半查找",
+        "weight": 1,
+        "id": "Se01",
+        "introduction": "基础查找算法"
+      }
+    },
+    {
+      "id": 11,
+      "labels": [
+        "Knowledge",
+        "Search"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "chapter": "查找",
+        "name": "散列表（Hash表）",
+        "weight": 2,
+        "id": "Se02",
+        "introduction": "基于哈希函数直接访问的数据结构"
+      }
+    },
+    {
+      "id": 12,
+      "labels": [
+        "Knowledge",
+        "Sort"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "排序",
+        "name": "插入排序",
+        "weight": 1,
+        "id": "So01",
+        "introduction": "直接插入、折半插入、希尔排序"
+      }
+    },
+    {
+      "id": 13,
+      "labels": [
+        "Knowledge",
+        "Sort"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "chapter": "排序",
+        "name": "交换排序",
+        "weight": 2,
+        "id": "So02",
+        "introduction": "冒泡排序与快速排序"
+      }
+    },
+    {
+      "id": 14,
+      "labels": [
+        "Knowledge",
+        "Sort"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "chapter": "排序",
+        "name": "选择排序",
+        "weight": 1,
+        "id": "So03",
+        "introduction": "简单选择排序与堆排序"
+      }
+    },
+    {
+      "id": 15,
+      "labels": [
+        "Knowledge",
+        "Sort"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "chapter": "排序",
+        "name": "归并排序与基数排序",
+        "weight": 2,
+        "id": "So04",
+        "introduction": "稳定的排序算法"
+      }
+    },
+    {
+      "id": 16,
+      "labels": [
+        "Resource"
+      ],
+      "properties": {
+        "duration": 30,
+        "name": "树与二叉树遍历精讲视频",
+        "id": "R01",
+        "type": "video"
+      }
+    },
+    {
+      "id": 17,
+      "labels": [
+        "Resource"
+      ],
+      "properties": {
+        "question_count": 5,
+        "name": "图的最小生成树算法真题练习",
+        "id": "R02",
+        "type": "exercise"
+      }
+    },
+    {
+      "id": 102,
+      "labels": [
+        "SeqList",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "顺序表",
+        "weight": 1,
+        "id": "S01",
+        "introduction": "顺序表的基础知识（前置）"
+      }
+    },
+    {
+      "id": 103,
+      "labels": [
+        "LinkedList",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "链表",
+        "weight": 1,
+        "id": "L01",
+        "introduction": "链表的基础知识（前置）"
+      }
+    },
+    {
+      "id": 104,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "树的基本概念",
+        "weight": 1,
+        "id": "T01",
+        "introduction": "树作为一种数据结构，其基本定义和相关概念"
+      }
+    },
+    {
+      "id": 105,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "二叉树的基本概念",
+        "weight": 1,
+        "id": "T02",
+        "introduction": "二叉树作为一种特殊的树，有不同的分类"
+      }
+    },
+    {
+      "id": 106,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "树的存储结构",
+        "weight": 1,
+        "id": "T03",
+        "introduction": "树利用顺序表、链表等数据结构的存储形式"
+      }
+    },
+    {
+      "id": 107,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "二叉树的遍历",
+        "weight": 2,
+        "id": "T04",
+        "introduction": "二叉树的前序遍历、中序遍历、后序遍历和层次遍历"
+      }
+    },
+    {
+      "id": 108,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "线索二叉树",
+        "weight": 2,
+        "id": "T05",
+        "introduction": "一种实现线性存储的二叉树"
+      }
+    },
+    {
+      "id": 109,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "森林与并查集",
+        "weight": 2,
+        "id": "T06",
+        "introduction": "使用多个树结构来存储不相交集合，实现合并与查找"
+      }
+    },
+    {
+      "id": 110,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "二叉搜索树",
+        "weight": 2,
+        "id": "T07",
+        "introduction": "一种便于搜索查找的二叉树，满足左子树<根<右子树"
+      }
+    },
+    {
+      "id": 111,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "平衡二叉树",
+        "weight": 2,
+        "id": "T08",
+        "introduction": "一种基于旋转操作自主调整树高的二叉树"
+      }
+    },
+    {
+      "id": 112,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "name": "平衡二叉搜索树",
+        "weight": 3,
+        "id": "T09",
+        "introduction": "同时满足平衡二叉树和搜索二叉树的树"
+      }
+    },
+    {
+      "id": 113,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "name": "红黑树",
+        "weight": 3,
+        "id": "T10",
+        "introduction": "一种更高效的平衡二叉搜索树"
+      }
+    },
+    {
+      "id": 114,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "B-树的基本概念",
+        "weight": 1,
+        "id": "T11",
+        "introduction": "一种多叉平衡搜索树"
+      }
+    },
+    {
+      "id": 115,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "name": "2-3树",
+        "weight": 3,
+        "id": "T12",
+        "introduction": "具有2-节点和3-节点的特殊B树"
+      }
+    },
+    {
+      "id": 116,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "B+树",
+        "weight": 2,
+        "id": "T13",
+        "introduction": "一种基于B-树定义的树，便于存储、索引、查询"
+      }
+    },
+    {
+      "id": 117,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "完全二叉树",
+        "weight": 1,
+        "id": "T14",
+        "introduction": "一种特殊的二叉树：除了最后一层外，每一层的节点都是满的，并且最后一层的节点从左到右依次排列，没有空缺。"
+      }
+    },
+    {
+      "id": 118,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "哈夫曼树与哈夫曼编码",
+        "weight": 2,
+        "id": "T15",
+        "introduction": "一种基于带权二叉树的算法树，可找出最小权重树，求出一组最优前缀码"
+      }
+    },
+    {
+      "id": 119,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "二叉堆",
+        "weight": 1,
+        "id": "T16",
+        "introduction": "一种特殊的完全二叉树，父亲都比孩子节点大或小"
+      }
+    },
+    {
+      "id": 120,
+      "labels": [
+        "Tree",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "堆排序",
+        "weight": 2,
+        "id": "T17",
+        "introduction": "基于二叉堆数据结构的排序算法"
+      }
+    },
+    {
+      "id": 121,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "图的基本概念",
+        "weight": 1,
+        "id": "G01",
+        "introduction": "一种非线性的数据结构形式，其基本定义和相关概念"
+      }
+    },
+    {
+      "id": 122,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "邻接矩阵存储",
+        "weight": 1,
+        "id": "G02",
+        "introduction": "基于点对邻接性的矩阵存储形式"
+      }
+    },
+    {
+      "id": 123,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "邻接表存储",
+        "weight": 1,
+        "id": "G03",
+        "introduction": "基于链表的存储形式"
+      }
+    },
+    {
+      "id": 124,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "DFS与BFS搜索",
+        "weight": 2,
+        "id": "G04",
+        "introduction": "深度优先搜索与广度优先搜索"
+      }
+    },
+    {
+      "id": 125,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "图的遍历",
+        "weight": 2,
+        "id": "G05",
+        "introduction": "基于DFS算法或BFS算法对图的每一个顶点遍历"
+      }
+    },
+    {
+      "id": 126,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "有向无环图与图的连通性",
+        "weight": 2,
+        "id": "G06",
+        "introduction": "利用图的遍历判断连通性，利用并查集判断是否存在环路"
+      }
+    },
+    {
+      "id": 127,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "拓扑排序",
+        "weight": 2,
+        "id": "G07",
+        "introduction": "基于有向无环图的排序方法"
+      }
+    },
+    {
+      "id": 128,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "name": "关键路径",
+        "weight": 3,
+        "id": "G08",
+        "introduction": "在有向无环图中找出项目中决定最短完成时间的最长活动顺序路径"
+      }
+    },
+    {
+      "id": 129,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "基础",
+        "name": "生成树与最小生成树",
+        "weight": 1,
+        "id": "G09",
+        "introduction": "带权子图"
+      }
+    },
+    {
+      "id": 130,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "Kruskal算法",
+        "weight": 2,
+        "id": "G10",
+        "introduction": "一种基于贪心的最小生成树算法"
+      }
+    },
+    {
+      "id": 131,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "Prim算法",
+        "weight": 2,
+        "id": "G11",
+        "introduction": "一种基于贪心的最小生成树算法"
+      }
+    },
+    {
+      "id": 132,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "Dijkstra算法",
+        "weight": 2,
+        "id": "G12",
+        "introduction": "一种基于贪心的寻找非负权图单源最短路径的算法"
+      }
+    },
+    {
+      "id": 133,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "Ford-Bellman算法",
+        "weight": 2,
+        "id": "G13",
+        "introduction": "一种基于松弛操作的寻找单源最短路径的算法"
+      }
+    },
+    {
+      "id": 134,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "重点",
+        "name": "Floyd算法",
+        "weight": 2,
+        "id": "G14",
+        "introduction": "一种基于动态规划的寻找全源最短路径算法"
+      }
+    },
+    {
+      "id": 135,
+      "labels": [
+        "Graph",
+        "Knowledge"
+      ],
+      "properties": {
+        "difficulty": "难点",
+        "name": "网络与最大流算法",
+        "weight": 3,
+        "id": "G15",
+        "introduction": "一种具有容量和源汇点的特殊图，满足最大流最小割定理"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": 4,
+      "target": 5,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 14,
+      "target": 120,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "type": "SAME_CHAPTER",
+      "properties": {}
+    },
+    {
+      "source": 102,
+      "target": 106,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 102,
+      "target": 122,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 103,
+      "target": 8,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 103,
+      "target": 106,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 103,
+      "target": 123,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 105,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 106,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 109,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 114,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 118,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 104,
+      "target": 129,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 107,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 108,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 110,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 111,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 117,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 105,
+      "target": 118,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 106,
+      "target": 108,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 107,
+      "target": 124,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 107,
+      "target": 124,
+      "type": "RELATED_TO",
+      "properties": {}
+    },
+    {
+      "source": 107,
+      "target": 16,
+      "type": "HAS_RESOURCE",
+      "properties": {}
+    },
+    {
+      "source": 109,
+      "target": 126,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 110,
+      "target": 112,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 111,
+      "target": 112,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 112,
+      "target": 113,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 114,
+      "target": 115,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 114,
+      "target": 116,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 117,
+      "target": 119,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 119,
+      "target": 120,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 120,
+      "target": 14,
+      "type": "RELATED_TO",
+      "properties": {}
+    },
+    {
+      "source": 121,
+      "target": 122,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 121,
+      "target": 123,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 121,
+      "target": 126,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 121,
+      "target": 129,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 121,
+      "target": 135,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 122,
+      "target": 124,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 123,
+      "target": 124,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 124,
+      "target": 125,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 126,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 130,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 131,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 132,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 133,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 134,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 125,
+      "target": 135,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 126,
+      "target": 127,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 127,
+      "target": 128,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 129,
+      "target": 130,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 129,
+      "target": 131,
+      "type": "PREREQUISITE_OF",
+      "properties": {}
+    },
+    {
+      "source": 129,
+      "target": 17,
+      "type": "HAS_RESOURCE",
+      "properties": {}
+    }
+  ]
+}
