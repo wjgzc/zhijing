@@ -1,16 +1,24 @@
 {
   "string": [
     {
+      "name": "study_widget_name",
+      "value": "知径学习待办"
+    },
+    {
+      "name": "study_widget_desc",
+      "value": "在桌面查看当前课程的学习计划与完成进度，点击任务继续练习"
+    },
+    {
       "name": "module_desc",
-      "value": "module description"
+      "value": "知径学习应用"
     },
     {
       "name": "EntryAbility_desc",
-      "value": "description"
+      "value": "知径，让学习有方向"
     },
     {
       "name": "EntryAbility_label",
-      "value": "label"
+      "value": "知径"
     },
     {
       "name": "internet_permission_reason",

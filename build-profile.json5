@@ -1,20 +1,6 @@
 {
   "app": {
-    "signingConfigs": [
-      {
-        "name": "default",
-        "type": "HarmonyOS",
-        "material": {
-          "certpath": "./entry/signing/default.cer",
-          "storePassword": "000000188DA38AC937A8D028756BFFE7D9B0F1D46EB02EAD507326847A564E48B3F38B2B93C72E59",
-          "keyAlias": "debugKey",
-          "keyPassword": "0000001817EF53BBF6D870FF726FD7E62A482AD16CEEB1BDE6DF4DF65CCDBF4E22A8434FCFA558C1",
-          "profile": "./entry/signing/debug.p7b",
-          "signAlg": "SHA256withECDSA",
-          "storeFile": "./entry/signing/debug.p12"
-        }
-      }
-    ],
+    "signingConfigs": [],
     "products": [
       {
         "name": "default",
@@ -31,7 +17,7 @@
     ],
     "buildModeSet": [
       {
-        "name": "debug",
+        "name": "debug"
       },
       {
         "name": "release"

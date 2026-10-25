@@ -1,0 +1,20 @@
+{
+  "course": "dsa",
+  "source": "10.5281/zenodo.18136250",
+  "license": "CC BY 4.0",
+  "questions": 96,
+  "tests": 493,
+  "translated": 96,
+  "knowledge_points_with_questions": 45,
+  "nodes": 96,
+  "relations": 176,
+  "source_hashes": {
+    "tst_questions.csv": "a5b2704cbf407c777b43c2cb5fe5e7bef20c0c4a118848ac3f44e538d8adee28",
+    "dsa\\dsa_graph_edges.csv": "70e0f85025d81102437d1cd32ab27fb6114171403ee96dc79f11da12b11e646c",
+    "dsa\\dsa_graph_nodes.csv": "c3d13cf7819a1e39cef51cd3853a849d586788265c8398fbbcdcb6dfae54376f",
+    "dsa\\dsa_problem_kc.csv": "0cd91936bfef069eea37751814799de8748ab352ac044ff7fce3273e5c89b5fe",
+    "dsa\\dsa_sequences.csv": "4cb6c7f28d619c8e8d3d5737b2d0e80e4d3e72d8d57b23b440d49c3c1924ddc7",
+    "dsa\\kc_code_map.csv": "f7b0d75caf733e1a26d6acf953f6791a80759a885a7fe397154869e3ba98130e",
+    "dsa\\question_code_map.csv": "73fc0112b4c227348d652ca3b3f270f1d2d3e8e55ce422c881b238498791e740"
+  }
+}

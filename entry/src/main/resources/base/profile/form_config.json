@@ -1,0 +1,17 @@
+{
+  "forms": [
+    {
+      "name": "StudyTodo",
+      "displayName": "$string:study_widget_name",
+      "description": "$string:study_widget_desc",
+      "src": "./ets/widget/pages/StudyTodo.ets",
+      "uiSyntax": "arkts",
+      "isDefault": true,
+      "isDynamic": true,
+      "supportDimensions": ["2*2", "2*4"],
+      "defaultDimension": "2*2",
+      "updateEnabled": true,
+      "updateDuration": 1
+    }
+  ]
+}

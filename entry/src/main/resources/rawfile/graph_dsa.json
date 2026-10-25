@@ -1,0 +1,1750 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "绪论",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 1,
+      "name": "线性表",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "线性表",
+      "n_questions": 0
+    },
+    {
+      "id": 2,
+      "name": "栈与队列",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "栈与队列",
+      "n_questions": 0
+    },
+    {
+      "id": 3,
+      "name": "串",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "串",
+      "n_questions": 0
+    },
+    {
+      "id": 4,
+      "name": "树与二叉树",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 5,
+      "name": "图",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 6,
+      "name": "查找",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "查找",
+      "n_questions": 0
+    },
+    {
+      "id": 7,
+      "name": "排序",
+      "depth": 0,
+      "is_leaf": false,
+      "parent": -1,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 8,
+      "name": "数据结构基本概念",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 9,
+      "name": "逻辑结构与存储结构",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 10,
+      "name": "抽象数据类型 ADT",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 11,
+      "name": "算法及其五个特性",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 12,
+      "name": "时间复杂度分析",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 3
+    },
+    {
+      "id": 13,
+      "name": "空间复杂度分析",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 0,
+      "module": "绪论",
+      "n_questions": 0
+    },
+    {
+      "id": 14,
+      "name": "线性表的定义与基本操作",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 5
+    },
+    {
+      "id": 15,
+      "name": "顺序表的存储结构",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 5
+    },
+    {
+      "id": 16,
+      "name": "顺序表的插入与删除",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 1
+    },
+    {
+      "id": 17,
+      "name": "单链表",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 3
+    },
+    {
+      "id": 18,
+      "name": "双链表",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 5
+    },
+    {
+      "id": 19,
+      "name": "循环链表",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 0
+    },
+    {
+      "id": 20,
+      "name": "静态链表",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 0
+    },
+    {
+      "id": 21,
+      "name": "顺序表与链表的对比与选择",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 1,
+      "module": "线性表",
+      "n_questions": 0
+    },
+    {
+      "id": 22,
+      "name": "栈的定义与后进先出特性",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 8
+    },
+    {
+      "id": 23,
+      "name": "顺序栈",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 8
+    },
+    {
+      "id": 24,
+      "name": "链栈",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 4
+    },
+    {
+      "id": 25,
+      "name": "栈的应用：括号匹配",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 1
+    },
+    {
+      "id": 26,
+      "name": "栈的应用：表达式求值",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 2
+    },
+    {
+      "id": 27,
+      "name": "栈与递归的实现",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 16
+    },
+    {
+      "id": 28,
+      "name": "队列的定义与先进先出特性",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 2
+    },
+    {
+      "id": 29,
+      "name": "循环队列",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 1
+    },
+    {
+      "id": 30,
+      "name": "链队列",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 1
+    },
+    {
+      "id": 31,
+      "name": "队列的应用：层次遍历与缓冲区",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 2,
+      "module": "栈与队列",
+      "n_questions": 0
+    },
+    {
+      "id": 32,
+      "name": "串的定义与存储结构",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 3,
+      "module": "串",
+      "n_questions": 2
+    },
+    {
+      "id": 33,
+      "name": "朴素模式匹配（BF 算法）",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 3,
+      "module": "串",
+      "n_questions": 0
+    },
+    {
+      "id": 34,
+      "name": "KMP 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 3,
+      "module": "串",
+      "n_questions": 0
+    },
+    {
+      "id": 35,
+      "name": "next 数组的构造",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 3,
+      "module": "串",
+      "n_questions": 0
+    },
+    {
+      "id": 36,
+      "name": "树的基本概念",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 7
+    },
+    {
+      "id": 37,
+      "name": "二叉树的定义与五个性质",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 1
+    },
+    {
+      "id": 38,
+      "name": "满二叉树与完全二叉树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 39,
+      "name": "二叉树的顺序存储",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 40,
+      "name": "二叉树的链式存储",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 41,
+      "name": "二叉树的前序遍历",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 6
+    },
+    {
+      "id": 42,
+      "name": "二叉树的中序遍历",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 1
+    },
+    {
+      "id": 43,
+      "name": "二叉树的后序遍历",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 1
+    },
+    {
+      "id": 44,
+      "name": "二叉树的层次遍历",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 2
+    },
+    {
+      "id": 45,
+      "name": "由遍历序列还原二叉树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 46,
+      "name": "线索二叉树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 47,
+      "name": "树、森林与二叉树的相互转换",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 48,
+      "name": "哈夫曼树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 49,
+      "name": "哈夫曼编码",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 50,
+      "name": "并查集",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 0
+    },
+    {
+      "id": 51,
+      "name": "二叉堆",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 4,
+      "module": "树与二叉树",
+      "n_questions": 2
+    },
+    {
+      "id": 52,
+      "name": "图的基本概念",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 53,
+      "name": "有向图、无向图与完全图",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 54,
+      "name": "邻接矩阵存储",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 55,
+      "name": "邻接表存储",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 56,
+      "name": "深度优先搜索 DFS",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 57,
+      "name": "广度优先搜索 BFS",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 58,
+      "name": "图的连通性与连通分量",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 1
+    },
+    {
+      "id": 59,
+      "name": "有向无环图 DAG",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 60,
+      "name": "拓扑排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 61,
+      "name": "关键路径",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 62,
+      "name": "生成树与最小生成树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 63,
+      "name": "Prim 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 64,
+      "name": "Kruskal 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 65,
+      "name": "单源最短路径问题",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 66,
+      "name": "Dijkstra 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 67,
+      "name": "Bellman-Ford 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 68,
+      "name": "Floyd 算法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 69,
+      "name": "网络与最大流",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 5,
+      "module": "图",
+      "n_questions": 0
+    },
+    {
+      "id": 70,
+      "name": "查找的基本概念与 ASL",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 0
+    },
+    {
+      "id": 71,
+      "name": "顺序查找",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 10
+    },
+    {
+      "id": 72,
+      "name": "折半查找",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 2
+    },
+    {
+      "id": 73,
+      "name": "分块查找",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 0
+    },
+    {
+      "id": 74,
+      "name": "二叉排序树 BST",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 14
+    },
+    {
+      "id": 75,
+      "name": "BST 的插入与删除",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 1
+    },
+    {
+      "id": 76,
+      "name": "平衡二叉树 AVL",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 3
+    },
+    {
+      "id": 77,
+      "name": "AVL 的四种旋转",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 1
+    },
+    {
+      "id": 78,
+      "name": "B-树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 0
+    },
+    {
+      "id": 79,
+      "name": "B+ 树",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 0
+    },
+    {
+      "id": 80,
+      "name": "散列表（哈希表）",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 13
+    },
+    {
+      "id": 81,
+      "name": "哈希冲突的解决方法",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 6,
+      "module": "查找",
+      "n_questions": 3
+    },
+    {
+      "id": 82,
+      "name": "排序的基本概念与稳定性",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 3
+    },
+    {
+      "id": 83,
+      "name": "直接插入排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 7
+    },
+    {
+      "id": 84,
+      "name": "折半插入排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 85,
+      "name": "希尔排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 86,
+      "name": "冒泡排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 1
+    },
+    {
+      "id": 87,
+      "name": "快速排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 1
+    },
+    {
+      "id": 88,
+      "name": "快速排序的划分过程",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 9
+    },
+    {
+      "id": 89,
+      "name": "简单选择排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 6
+    },
+    {
+      "id": 90,
+      "name": "堆排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 91,
+      "name": "归并排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 1
+    },
+    {
+      "id": 92,
+      "name": "基数排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 4
+    },
+    {
+      "id": 93,
+      "name": "外部排序",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 94,
+      "name": "各排序算法的对比与选择",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    },
+    {
+      "id": 95,
+      "name": "排序算法的时间下界",
+      "depth": 1,
+      "is_leaf": true,
+      "parent": 7,
+      "module": "排序",
+      "n_questions": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": 8,
+      "target": 9,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 64,
+      "target": 65,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 65,
+      "target": 66,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 66,
+      "target": 67,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 67,
+      "target": 68,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 68,
+      "target": 69,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 70,
+      "target": 71,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 71,
+      "target": 72,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 72,
+      "target": 73,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 73,
+      "target": 74,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 74,
+      "target": 75,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 75,
+      "target": 76,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 76,
+      "target": 77,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 77,
+      "target": 78,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 78,
+      "target": 79,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 79,
+      "target": 80,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 80,
+      "target": 81,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 83,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 83,
+      "target": 84,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 84,
+      "target": 85,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 85,
+      "target": 86,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 86,
+      "target": 87,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 87,
+      "target": 88,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 88,
+      "target": 89,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 89,
+      "target": 90,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 90,
+      "target": 91,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 91,
+      "target": 92,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 92,
+      "target": 93,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 93,
+      "target": 94,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 94,
+      "target": 95,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 15,
+      "target": 39,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 17,
+      "target": 40,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 15,
+      "target": 54,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 17,
+      "target": 55,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 15,
+      "target": 71,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 15,
+      "target": 72,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 27,
+      "target": 56,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 28,
+      "target": 57,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 27,
+      "target": 50,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 41,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 42,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 43,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 44,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 38,
+      "target": 51,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 51,
+      "target": 90,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 37,
+      "target": 48,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 52,
+      "target": 54,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 52,
+      "target": 55,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 56,
+      "target": 60,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 56,
+      "target": 63,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 56,
+      "target": 66,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 62,
+      "target": 64,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 65,
+      "target": 67,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 65,
+      "target": 68,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 70,
+      "target": 72,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 70,
+      "target": 73,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 74,
+      "target": 76,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 74,
+      "target": 78,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 70,
+      "target": 80,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 83,
+      "target": 85,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 86,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 87,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 89,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 91,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 92,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 93,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 82,
+      "target": 94,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 12,
+      "target": 95,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 12,
+      "target": 94,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 9,
+      "target": 15,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 9,
+      "target": 17,
+      "type": "PREREQUISITE_OF"
+    },
+    {
+      "source": 38,
+      "target": 37,
+      "type": "IS_A"
+    },
+    {
+      "source": 39,
+      "target": 37,
+      "type": "IS_A"
+    },
+    {
+      "source": 40,
+      "target": 37,
+      "type": "IS_A"
+    },
+    {
+      "source": 46,
+      "target": 40,
+      "type": "IS_A"
+    },
+    {
+      "source": 51,
+      "target": 38,
+      "type": "IS_A"
+    },
+    {
+      "source": 74,
+      "target": 37,
+      "type": "IS_A"
+    },
+    {
+      "source": 76,
+      "target": 74,
+      "type": "IS_A"
+    },
+    {
+      "source": 79,
+      "target": 78,
+      "type": "IS_A"
+    },
+    {
+      "source": 66,
+      "target": 65,
+      "type": "IS_A"
+    },
+    {
+      "source": 67,
+      "target": 65,
+      "type": "IS_A"
+    },
+    {
+      "source": 68,
+      "target": 65,
+      "type": "IS_A"
+    },
+    {
+      "source": 63,
+      "target": 62,
+      "type": "IS_A"
+    },
+    {
+      "source": 64,
+      "target": 62,
+      "type": "IS_A"
+    },
+    {
+      "source": 23,
+      "target": 22,
+      "type": "IS_A"
+    },
+    {
+      "source": 24,
+      "target": 22,
+      "type": "IS_A"
+    },
+    {
+      "source": 29,
+      "target": 28,
+      "type": "IS_A"
+    },
+    {
+      "source": 30,
+      "target": 28,
+      "type": "IS_A"
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 17,
+      "target": 15,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 24,
+      "target": 23,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 30,
+      "target": 29,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 34,
+      "target": 33,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 40,
+      "target": 39,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 42,
+      "target": 41,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 43,
+      "target": 42,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 55,
+      "target": 54,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 57,
+      "target": 56,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 64,
+      "target": 63,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 66,
+      "target": 67,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 67,
+      "target": 66,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 71,
+      "target": 72,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 72,
+      "target": 71,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 76,
+      "target": 78,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 78,
+      "target": 76,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 79,
+      "target": 78,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 78,
+      "target": 79,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 83,
+      "target": 84,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 84,
+      "target": 83,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 86,
+      "target": 87,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 87,
+      "target": 86,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 87,
+      "target": 91,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 91,
+      "target": 87,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 89,
+      "target": 90,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 90,
+      "target": 89,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 92,
+      "target": 82,
+      "type": "CONTRASTS_WITH"
+    },
+    {
+      "source": 82,
+      "target": 92,
+      "type": "CONTRASTS_WITH"
+    }
+  ]
+}

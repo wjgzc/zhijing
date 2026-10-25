@@ -1,65 +1,92 @@
-import { AppStateManager, StudyData } from '../model/StudyModel';
-import { promptAction } from '@kit.ArkUI';
+import { AppState } from '../model/AppState';
 import { switchTab } from '../utils/TabSwitch';
+
+interface PlanItem {
+  kc: number;
+  name: string;
+  done: boolean;
+  mastery: number;
+}
+
+interface StatCardParams {
+  label: string;
+  value: string;
+  progress: number;
+}
 
 @Component
 export struct Index {
-  @State studyData: StudyData = AppStateManager.getStudyData();
-  @State currentPathIndex: number = 0;
-  @State masteryRate: number = 68;
-  @State streakDays: number = 12;
+  @Prop @Watch('onActiveChange') isActive: boolean = true;
+  @State questionCount: number = 0;
+  @State overallMastery: number = 0;
+  @State hasMastery: boolean = false;
+  @State planItems: PlanItem[] = [];
+  @State planDoneCount: number = 0;
+  @StorageProp('appStateVersion') @Watch('refresh') stateVersion: number = 0;
 
   aboutToAppear(): void {
-    this.studyData = AppStateManager.getStudyData();
+    this.refresh();
   }
 
-  onPageShow(): void {
-    this.studyData = AppStateManager.getStudyData();
+  private onActiveChange(): void {
+    if (this.isActive) {
+      this.refresh();
+    }
+  }
+
+  private refresh(): void {
+    const overview = AppState.getOverview();
+    this.questionCount = overview.questionCount;
+    this.overallMastery = overview.overallMastery;
+    this.hasMastery = overview.hasMastery;
+    this.planDoneCount = overview.doneTaskCount;
+    const plan = AppState.getPlan();
+    const items: PlanItem[] = [];
+    for (let i = 0; i < plan.length; i++) {
+      items.push({
+        kc: plan[i].kc,
+        name: plan[i].name,
+        done: AppState.isDone(plan[i].kc),
+        mastery: plan[i].mastery
+      });
+    }
+    this.planItems = items;
   }
 
   build() {
     Scroll() {
       Column() {
-          // 顶部问候语
-          this.HeaderSection()
-
-          // Agent入口按钮
-          this.AgentButton()
-
-          // 今日学习路径
-          this.TodayPathSection()
-
-          // 学习概览统计
-          this.StatsSection()
-
-          // 底部留白
-          Blank().height(100)
-        }
-        .width('100%')
-        .alignItems(HorizontalAlign.Center)
+        this.HeaderSection()
+        this.AgentButton()
+        this.TodayPathSection()
+        this.StatsSection()
+        Blank().height(24)
       }
       .width('100%')
-      .height('100%')
-      .backgroundColor('#F5F5F5')
-      .scrollBar(BarState.Off)
-      .edgeEffect(EdgeEffect.Spring)
-
+      .alignItems(HorizontalAlign.Center)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor($r('app.color.page_background'))
+    .scrollBar(BarState.Off)
+    .edgeEffect(EdgeEffect.Spring)
   }
 
-  // 顶部问候语
   @Builder
   HeaderSection() {
     Column() {
-      Text('早上好，同学')
+      Text('你好，同学')
         .fontSize(26)
         .fontWeight(FontWeight.Bold)
-        .fontColor('#1A1A2E')
+        .fontColor($r('app.color.text_primary'))
         .width('90%')
         .textAlign(TextAlign.Start)
 
-      Text('今天有3个知识点待探索，继续加油！')
+      Text(this.questionCount > 0 ?
+        `已完成 ${this.questionCount} 道题，继续练习巩固知识` :
+        '去知识图谱做几道题，让学习助手 帮你规划学习吧')
         .fontSize(14)
-        .fontColor('#8E92A4')
+        .fontColor($r('app.color.text_secondary'))
         .width('90%')
         .textAlign(TextAlign.Start)
         .margin({ top: 6 })
@@ -69,12 +96,11 @@ export struct Index {
     .alignItems(HorizontalAlign.Center)
   }
 
-  // Agent入口按钮
   @Builder
   AgentButton() {
     Button() {
       Row() {
-        Text('问知径Agent')
+        Text('问学习助手')
           .fontSize(16)
           .fontWeight(FontWeight.Medium)
           .fontColor(Color.White)
@@ -86,7 +112,7 @@ export struct Index {
     .height(64)
     .linearGradient({
       angle: 135,
-      colors: [['#4A90D9', 0], ['#6BA8E8', 1]]
+      colors: [[$r('app.color.brand_solid'), 0], [$r('app.color.brand_end'), 1]]
     })
     .borderRadius(32)
     .shadow({
@@ -101,46 +127,66 @@ export struct Index {
     .margin({ top: 24, bottom: 24 })
   }
 
-  // 今日学习路径
   @Builder
   TodayPathSection() {
     Column() {
-      // 标题栏
       Row() {
-        Text('今日学习路径')
+        Text('当前学习计划')
           .fontSize(17)
           .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
+          .fontColor($r('app.color.text_primary'))
 
-        Text('查看全部 →')
-          .fontSize(13)
-          .fontColor('#4A90D9')
-          .onClick(() => switchTab(3))
+        if (this.planItems.length > 0) {
+          Text('查看全部 →')
+            .fontSize(13)
+            .fontColor($r('app.color.brand'))
+            .onClick(() => switchTab(3))
+        }
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
       .margin({ bottom: 16 })
 
-      // 路径节点
-      Scroll() {
-        Row() {
-          this.PathNode('数组', true, false)
-          this.PathArrow()
-          this.PathNode('链表', false, true)
-          this.PathArrow()
-          this.PathNode('栈', false, false)
-          this.PathArrow()
-          this.PathNode('队列', false, false)
+      if (this.planItems.length === 0) {
+        Text('暂无学习计划，去学习助手 生成一个吧')
+          .fontSize(13)
+          .fontColor($r('app.color.text_secondary'))
+          .width('100%')
+          .padding({ top: 8, bottom: 8 })
+      } else {
+        Text(`已完成 ${this.planDoneCount} / ${this.planItems.length}`)
+          .fontSize(12)
+          .fontColor($r('app.color.text_secondary'))
+          .width('100%')
+          .margin({ bottom: 10 })
+
+        Scroll() {
+          Row() {
+            ForEach(this.planItems.slice(0, 8), (item: PlanItem, idx: number) => {
+              if (idx > 0) {
+                this.PathArrow()
+              }
+              Column() {
+                Text(item.name + (item.done ? ' ✅' : ' ⏳'))
+                  .fontSize(13)
+                  .fontWeight(FontWeight.Medium)
+                  .fontColor(Color.White)
+                  .padding({ left: 16, right: 16, top: 10, bottom: 10 })
+              }
+              .backgroundColor(item.done ? $r('app.color.success') : $r('app.color.warning'))
+              .borderRadius(14)
+            }, (item: PlanItem, idx: number) => item.kc.toString() + '_' + (item.done ? '1' : '0'))
+          }
+          .padding({ left: 4, right: 4 })
         }
-        .padding({ left: 4, right: 4 })
+        .width('100%')
+        .scrollable(ScrollDirection.Horizontal)
+        .scrollBar(BarState.Off)
       }
-      .width('100%')
-      .scrollable(ScrollDirection.Horizontal)
-      .scrollBar(BarState.Off)
     }
     .width('90%')
     .padding(16)
-    .backgroundColor(Color.White)
+    .backgroundColor($r('app.color.surface'))
     .borderRadius(20)
     .shadow({
       radius: 8,
@@ -151,50 +197,15 @@ export struct Index {
     .margin({ bottom: 16 })
   }
 
-  // 路径节点
-  @Builder
-  PathNode(name: string, isDone: boolean, isActive: boolean) {
-    Column() {
-      Text(name + (isDone ? ' ✅' : isActive ? ' 🔄' : ' ⏳'))
-        .fontSize(13)
-        .fontWeight(FontWeight.Medium)
-        .fontColor(isDone || isActive ? Color.White : '#8E92A4')
-        .padding({ left: 16, right: 16, top: 10, bottom: 10 })
-    }
-    .backgroundColor(
-      isDone ? '#7ED321' :
-        isActive ? '#F5A623' :
-          Color.White
-    )
-    .borderRadius(14)
-    .border({
-      width: isDone || isActive ? 0 : 2,
-      color: '#E8E8E8'
-    })
-    .shadow({
-      radius: isActive ? 12 : 4,
-      color: isActive ? '#35F5A623' : '#10000000',
-      offsetX: 0,
-      offsetY: isActive ? 4 : 2
-    })
-    .animation({
-      duration: 2000,
-      iterations: isActive ? -1 : 1,
-      playMode: PlayMode.Alternate
-    })
-  }
-
-  // 路径箭头
   @Builder
   PathArrow() {
     Text('→')
       .fontSize(16)
       .fontWeight(FontWeight.Bold)
-      .fontColor('#4A90D9')
+      .fontColor($r('app.color.brand'))
       .margin({ left: 8, right: 8 })
   }
 
-  // 学习概览统计
   @Builder
   StatsSection() {
     Column() {
@@ -202,24 +213,29 @@ export struct Index {
         Text('学习概览')
           .fontSize(20)
           .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
+          .fontColor($r('app.color.text_primary'))
       }
       .width('100%')
       .margin({ bottom: 16 })
 
       Row() {
-        // 掌握度
-        this.StatCard('掌握度', this.masteryRate + '%', this.masteryRate)
-
-        // 连续学习天数
-        this.StatCard('连续学习天数', this.streakDays.toString(), 88)
+        this.StatCard({
+          label: AppState.isDsa() ? '预测答对率' : '综合掌握度',
+          value: this.hasMastery ? this.overallMastery + '%' : '待诊断',
+          progress: this.hasMastery ? this.overallMastery : 0
+        })
+        this.StatCard({
+          label: '已做题目',
+          value: this.questionCount + ' 道',
+          progress: Math.min(this.questionCount, 100)
+        })
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
     }
     .width('90%')
     .padding(16)
-    .backgroundColor(Color.White)
+    .backgroundColor($r('app.color.surface'))
     .borderRadius(20)
     .shadow({
       radius: 8,
@@ -229,44 +245,31 @@ export struct Index {
     })
   }
 
-  // 统计卡片
   @Builder
-  StatCard(label: string, value: string, progress: number) {
+  StatCard(params: StatCardParams) {
     Column() {
-      // 环形进度条（简化版）
-      Stack() {
-        Circle()
-          .width(80)
-          .height(80)
-          .fill('none')
-          .stroke('#E8E8E8')
-          .strokeWidth(6)
+      Progress({ value: params.progress, total: 100, type: ProgressType.Ring })
+        .width(72).height(72)
+        .color($r('app.color.brand')).backgroundColor($r('app.color.divider'))
+        .style({ strokeWidth: 6, enableSmoothEffect: true })
+        .accessibilityLevel('no')
+        .margin({ bottom: 12 })
 
-        Circle()
-          .width(80)
-          .height(80)
-          .fill('none')
-          .stroke('#4A90D9')
-          .strokeWidth(6)
-          .strokeDashArray([progress * 2.51, 251]) // 周长约251
-          .strokeLineCap(LineCapStyle.Round)
-          .rotate({ angle: -90 })
-      }
-      .margin({ bottom: 8 })
-
-      Text(value)
-        .fontSize(28)
+      Text(params.value)
+        .fontSize(26)
         .fontWeight(FontWeight.Bold)
-        .fontColor('#4A90D9')
+        .fontColor($r('app.color.brand'))
 
-      Text(label)
+      Text(params.label)
         .fontSize(12)
-        .fontColor('#8E92A4')
+        .fontColor($r('app.color.text_secondary'))
         .margin({ top: 4 })
     }
     .width('48%')
     .padding(16)
-    .backgroundColor('#F7F9FC')
+    .backgroundColor($r('app.color.surface_subtle'))
     .borderRadius(16)
+    .accessibilityGroup(true)
+    .accessibilityText(params.label + '，' + params.value)
   }
 }

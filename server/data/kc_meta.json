@@ -1,0 +1,8227 @@
+{
+"0": {
+"name": "乘法原理里的其他类型",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"1": {
+"name": "加乘原理综合",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 3
+},
+"2": {
+"name": "物品搭配",
+"module": "拓展思维",
+"n_questions": 31,
+"is_leaf": true,
+"depth": 4
+},
+"3": {
+"name": "染色计数问题",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 3
+},
+"4": {
+"name": "物体数量组合",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"5": {
+"name": "路线搭配问题",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 4
+},
+"6": {
+"name": "几何思想平移",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"7": {
+"name": "陷阱型不规则图形求周长",
+"module": "拓展思维",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 5
+},
+"8": {
+"name": "楼梯型不规则图形求周长",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 5
+},
+"9": {
+"name": "长方形周长",
+"module": "拓展思维",
+"n_questions": 29,
+"is_leaf": false,
+"depth": 5
+},
+"10": {
+"name": "长方形组合图形周长",
+"module": "拓展思维",
+"n_questions": 42,
+"is_leaf": true,
+"depth": 5
+},
+"11": {
+"name": "公式法长方形正方形周长",
+"module": "课内题型",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 4
+},
+"12": {
+"name": "几何方法整体减空白",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"13": {
+"name": "几何方法差不变",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"14": {
+"name": "图形认知",
+"module": "拓展思维",
+"n_questions": 29,
+"is_leaf": false,
+"depth": 3
+},
+"15": {
+"name": "图形剪拼",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"16": {
+"name": "分割图形（不需等分）",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 5
+},
+"17": {
+"name": "正方形组合图形周长",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 5
+},
+"18": {
+"name": "长方形和正方形面积公式",
+"module": "拓展思维",
+"n_questions": 113,
+"is_leaf": true,
+"depth": 5
+},
+"19": {
+"name": "连线法",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"20": {
+"name": "找矛盾",
+"module": "拓展思维",
+"n_questions": 22,
+"is_leaf": true,
+"depth": 5
+},
+"21": {
+"name": "排除矛盾法",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"22": {
+"name": "半真半假",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 5
+},
+"23": {
+"name": "整数倍数关系",
+"module": "拓展思维",
+"n_questions": 26,
+"is_leaf": true,
+"depth": 5
+},
+"24": {
+"name": "整数乘法巧算之提取公因数（普通型）",
+"module": "拓展思维",
+"n_questions": 72,
+"is_leaf": true,
+"depth": 4
+},
+"25": {
+"name": "直接运用分配律",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 5
+},
+"26": {
+"name": "整数提取公因数",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": false,
+"depth": 4
+},
+"27": {
+"name": "神推理",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"28": {
+"name": "长方形正方形组合图形周长",
+"module": "拓展思维",
+"n_questions": 17,
+"is_leaf": true,
+"depth": 5
+},
+"29": {
+"name": "表格法",
+"module": "拓展思维",
+"n_questions": 20,
+"is_leaf": true,
+"depth": 4
+},
+"30": {
+"name": "除法竖式",
+"module": "拓展思维",
+"n_questions": 38,
+"is_leaf": true,
+"depth": 5
+},
+"31": {
+"name": "表外除法计算",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 5
+},
+"32": {
+"name": "等差数列求通项",
+"module": "拓展思维",
+"n_questions": 56,
+"is_leaf": true,
+"depth": 4
+},
+"33": {
+"name": "等差数列求和",
+"module": "拓展思维",
+"n_questions": 75,
+"is_leaf": true,
+"depth": 4
+},
+"34": {
+"name": "整数好朋友数",
+"module": "拓展思维",
+"n_questions": 60,
+"is_leaf": true,
+"depth": 5
+},
+"35": {
+"name": "中项定理应用",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 4
+},
+"36": {
+"name": "乘除法抵消",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 5
+},
+"37": {
+"name": "等差数列求公差",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 4
+},
+"38": {
+"name": "整数除法巧算之提取公除数（普通型）",
+"module": "拓展思维",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 4
+},
+"39": {
+"name": "扫雷游戏",
+"module": "拓展思维",
+"n_questions": 29,
+"is_leaf": true,
+"depth": 3
+},
+"40": {
+"name": "长方形计数",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 5
+},
+"41": {
+"name": "正方形",
+"module": "拓展思维",
+"n_questions": 60,
+"is_leaf": true,
+"depth": 5
+},
+"42": {
+"name": "封闭植树类型问题(段数大于10)",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 5
+},
+"43": {
+"name": "认识线段",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 5
+},
+"44": {
+"name": "线段计数",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 5
+},
+"45": {
+"name": "间隔问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 2
+},
+"46": {
+"name": "两端植树类型问题(段数大于10)",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 5
+},
+"47": {
+"name": "一端种树问题",
+"module": "知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"48": {
+"name": "敲钟问题",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"49": {
+"name": "两端植树问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"50": {
+"name": "乘法应用（顺口溜）",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"51": {
+"name": "两端都不植树类型问题(段数小于等于10)",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"52": {
+"name": "两端都不种树问题",
+"module": "知识点",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"53": {
+"name": "两端种树问题",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"54": {
+"name": "爬楼梯问题",
+"module": "拓展思维",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 4
+},
+"55": {
+"name": "基本排列的周期问题",
+"module": "拓展思维",
+"n_questions": 101,
+"is_leaf": true,
+"depth": 3
+},
+"56": {
+"name": "单一变量还原问题",
+"module": "拓展思维",
+"n_questions": 81,
+"is_leaf": true,
+"depth": 3
+},
+"57": {
+"name": "日期中的周期",
+"module": "拓展思维",
+"n_questions": 115,
+"is_leaf": true,
+"depth": 4
+},
+"58": {
+"name": "逆运算",
+"module": "拓展思维",
+"n_questions": 17,
+"is_leaf": true,
+"depth": 3
+},
+"59": {
+"name": "多量还原问题",
+"module": "拓展思维",
+"n_questions": 34,
+"is_leaf": true,
+"depth": 3
+},
+"60": {
+"name": "还原问题",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": false,
+"depth": 3
+},
+"61": {
+"name": "两量还原问题",
+"module": "拓展思维",
+"n_questions": 28,
+"is_leaf": true,
+"depth": 3
+},
+"62": {
+"name": "单归一问题",
+"module": "拓展思维",
+"n_questions": 29,
+"is_leaf": true,
+"depth": 4
+},
+"63": {
+"name": "分一半",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 3
+},
+"64": {
+"name": "单人简单行程问题",
+"module": "拓展思维",
+"n_questions": 29,
+"is_leaf": true,
+"depth": 4
+},
+"65": {
+"name": "双归一问题",
+"module": "拓展思维",
+"n_questions": 66,
+"is_leaf": true,
+"depth": 4
+},
+"66": {
+"name": "长方形周长公式",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 4
+},
+"67": {
+"name": "三角形",
+"module": "课内知识点",
+"n_questions": 57,
+"is_leaf": false,
+"depth": 5
+},
+"68": {
+"name": "逻辑绘图",
+"module": "拓展思维",
+"n_questions": 17,
+"is_leaf": true,
+"depth": 3
+},
+"69": {
+"name": "数的周期",
+"module": "拓展思维",
+"n_questions": 30,
+"is_leaf": true,
+"depth": 4
+},
+"70": {
+"name": "直接运用公式求单价",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"71": {
+"name": "复式条形统计图",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"72": {
+"name": "数据的简单分析",
+"module": "知识点",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 2
+},
+"73": {
+"name": "运算求解",
+"module": "能力",
+"n_questions": 82,
+"is_leaf": false,
+"depth": 2
+},
+"74": {
+"name": "单一对象条形图",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"75": {
+"name": "多个对象条形图",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"76": {
+"name": "条形统计图",
+"module": "知识点",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 3
+},
+"77": {
+"name": "简单统计表",
+"module": "知识点",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 4
+},
+"78": {
+"name": "二量容斥",
+"module": "拓展思维",
+"n_questions": 139,
+"is_leaf": true,
+"depth": 3
+},
+"79": {
+"name": "灵活分组",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 4
+},
+"80": {
+"name": "用分组法解决基础鸡兔同笼",
+"module": "知识点",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 4
+},
+"81": {
+"name": "原型题",
+"module": "拓展思维",
+"n_questions": 57,
+"is_leaf": true,
+"depth": 5
+},
+"82": {
+"name": "三量容斥",
+"module": "拓展思维",
+"n_questions": 33,
+"is_leaf": true,
+"depth": 3
+},
+"83": {
+"name": "数码综合问题",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 3
+},
+"84": {
+"name": "容斥原理",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 2
+},
+"85": {
+"name": "页码问题",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": false,
+"depth": 2
+},
+"86": {
+"name": "页码数量",
+"module": "拓展思维",
+"n_questions": 27,
+"is_leaf": true,
+"depth": 4
+},
+"87": {
+"name": "平行四边形的概念",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 5
+},
+"88": {
+"name": "平行四边形的面积公式",
+"module": "拓展思维",
+"n_questions": 50,
+"is_leaf": true,
+"depth": 5
+},
+"89": {
+"name": "利用面积求周长",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"90": {
+"name": "认识直角梯形",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"91": {
+"name": "两条对角线垂直的四边形的面积求法",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 5
+},
+"92": {
+"name": "梯形的面积公式",
+"module": "拓展思维",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 5
+},
+"93": {
+"name": "公式法求梯形面积",
+"module": "课内题型",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"94": {
+"name": "叠加覆盖",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"95": {
+"name": "正求反求面积",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"96": {
+"name": "用公式直接求速度",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"97": {
+"name": "平行四边形边角特点",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"98": {
+"name": "梯形面积公式",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 4
+},
+"99": {
+"name": "同时出发",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 5
+},
+"100": {
+"name": "双人简单行程问题",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"101": {
+"name": "不同时出发相向而行",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 5
+},
+"102": {
+"name": "实践应用",
+"module": "能力",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 2
+},
+"103": {
+"name": "逻辑分析",
+"module": "学习能力",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 2
+},
+"104": {
+"name": "同时出发相向而行",
+"module": "拓展思维",
+"n_questions": 46,
+"is_leaf": true,
+"depth": 5
+},
+"105": {
+"name": "用公式直接求路程",
+"module": "知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"106": {
+"name": "奇数与偶数的加减规律",
+"module": "知识点",
+"n_questions": 35,
+"is_leaf": true,
+"depth": 3
+},
+"107": {
+"name": "不同时出发",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 5
+},
+"108": {
+"name": "奇数与偶数的应用",
+"module": "知识点",
+"n_questions": 29,
+"is_leaf": true,
+"depth": 3
+},
+"109": {
+"name": "奇数与偶数的混合计算",
+"module": "知识点",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 3
+},
+"110": {
+"name": "和与积的奇偶性",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"111": {
+"name": "利用奇偶规律构造数",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"112": {
+"name": "乘法竖式谜",
+"module": "拓展思维",
+"n_questions": 41,
+"is_leaf": true,
+"depth": 4
+},
+"113": {
+"name": "尾数系整除特征",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"114": {
+"name": "整除初识",
+"module": "知识点",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"115": {
+"name": "3的倍数特征",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"116": {
+"name": "和系整除特征应用",
+"module": "知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"117": {
+"name": "奇数与偶数的认识",
+"module": "知识点",
+"n_questions": 32,
+"is_leaf": true,
+"depth": 3
+},
+"118": {
+"name": "除法竖式谜",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"119": {
+"name": "表外乘法计算",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 5
+},
+"120": {
+"name": "加法横式",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 5
+},
+"121": {
+"name": "特殊乘积",
+"module": "拓展思维",
+"n_questions": 20,
+"is_leaf": true,
+"depth": 5
+},
+"122": {
+"name": "整数加减巧算之位值原理",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"123": {
+"name": "连续自然数长方形数表之已知位置求数",
+"module": "拓展思维",
+"n_questions": 27,
+"is_leaf": true,
+"depth": 5
+},
+"124": {
+"name": "连续自然数长方形数表之已知数求位置",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 5
+},
+"125": {
+"name": "数列与数表",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 2
+},
+"126": {
+"name": "烙饼问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"127": {
+"name": "时间总和问题",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 5
+},
+"128": {
+"name": "调运中的统筹",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"129": {
+"name": "路程=速度×时间",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"130": {
+"name": "追及与相遇结合",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"131": {
+"name": "整数简易方程",
+"module": "知识点",
+"n_questions": 12,
+"is_leaf": false,
+"depth": 4
+},
+"132": {
+"name": "年龄问题之差倍型",
+"module": "知识点",
+"n_questions": 29,
+"is_leaf": true,
+"depth": 3
+},
+"133": {
+"name": "代数式",
+"module": "知识点",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 4
+},
+"134": {
+"name": "一元一次方程解应用题",
+"module": "知识点",
+"n_questions": 11,
+"is_leaf": false,
+"depth": 3
+},
+"135": {
+"name": "整数系数方程",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"136": {
+"name": "相遇问题求路程和",
+"module": "知识点",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"137": {
+"name": "列方程解应用题",
+"module": "知识点",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 3
+},
+"138": {
+"name": "最短路线",
+"module": "课内题型",
+"n_questions": 107,
+"is_leaf": true,
+"depth": 4
+},
+"139": {
+"name": "正方形周长",
+"module": "拓展思维",
+"n_questions": 26,
+"is_leaf": false,
+"depth": 5
+},
+"140": {
+"name": "巧求周长",
+"module": "拓展思维",
+"n_questions": 51,
+"is_leaf": true,
+"depth": 4
+},
+"141": {
+"name": "不规则多边形的周长",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 5
+},
+"142": {
+"name": "数字组数（不可重复）",
+"module": "拓展思维",
+"n_questions": 35,
+"is_leaf": true,
+"depth": 5
+},
+"143": {
+"name": "用枚举法找出最值",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"144": {
+"name": "卡片组数",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 5
+},
+"145": {
+"name": "图文加法竖式数字谜",
+"module": "拓展思维",
+"n_questions": 26,
+"is_leaf": true,
+"depth": 4
+},
+"146": {
+"name": "乘法竖式",
+"module": "拓展思维",
+"n_questions": 45,
+"is_leaf": true,
+"depth": 5
+},
+"147": {
+"name": "先归一再归总",
+"module": "拓展思维",
+"n_questions": 20,
+"is_leaf": true,
+"depth": 3
+},
+"148": {
+"name": "直接求平均数",
+"module": "拓展思维",
+"n_questions": 34,
+"is_leaf": true,
+"depth": 4
+},
+"149": {
+"name": "综合题普通型",
+"module": "拓展思维",
+"n_questions": 38,
+"is_leaf": true,
+"depth": 4
+},
+"150": {
+"name": "加权平均数",
+"module": "拓展思维",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 4
+},
+"151": {
+"name": "平均数问题",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 3
+},
+"152": {
+"name": "分数加减",
+"module": "课内知识点",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 4
+},
+"153": {
+"name": "分数的性质",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"154": {
+"name": "分数的意义",
+"module": "课内知识点",
+"n_questions": 22,
+"is_leaf": false,
+"depth": 4
+},
+"155": {
+"name": "树形图",
+"module": "拓展思维",
+"n_questions": 99,
+"is_leaf": true,
+"depth": 3
+},
+"156": {
+"name": "图文周期",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"157": {
+"name": "环形操作周期问题",
+"module": "拓展思维",
+"n_questions": 28,
+"is_leaf": true,
+"depth": 3
+},
+"158": {
+"name": "圆周中的周期",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"159": {
+"name": "数列找规律填数",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"160": {
+"name": "奇数与偶数的乘法规律",
+"module": "知识点",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 3
+},
+"161": {
+"name": "整数乘法巧算之分配律",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": false,
+"depth": 4
+},
+"162": {
+"name": "整数除法巧算之类分配律",
+"module": "拓展思维",
+"n_questions": 33,
+"is_leaf": true,
+"depth": 4
+},
+"163": {
+"name": "商不变性质",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"164": {
+"name": "整数乘除法巧算",
+"module": "拓展思维",
+"n_questions": 22,
+"is_leaf": false,
+"depth": 4
+},
+"165": {
+"name": "公式法求长方形正方形面积",
+"module": "课内题型",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"166": {
+"name": "两量和倍",
+"module": "拓展思维",
+"n_questions": 72,
+"is_leaf": true,
+"depth": 5
+},
+"167": {
+"name": "两量倍",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"168": {
+"name": "多量和倍",
+"module": "拓展思维",
+"n_questions": 57,
+"is_leaf": true,
+"depth": 5
+},
+"169": {
+"name": "除法的实际应用",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"170": {
+"name": "已知两量之间倍数关系和两量之和，求两个量",
+"module": "知识点",
+"n_questions": 47,
+"is_leaf": true,
+"depth": 4
+},
+"171": {
+"name": "已知两量之间倍数关系和一份量，求多份量",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"172": {
+"name": "非整数倍差倍剩余",
+"module": "拓展思维",
+"n_questions": 31,
+"is_leaf": true,
+"depth": 5
+},
+"173": {
+"name": "非整数倍差倍不足",
+"module": "拓展思维",
+"n_questions": 17,
+"is_leaf": true,
+"depth": 5
+},
+"174": {
+"name": "多量差倍",
+"module": "拓展思维",
+"n_questions": 18,
+"is_leaf": true,
+"depth": 4
+},
+"175": {
+"name": "和差倍问题",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": false,
+"depth": 2
+},
+"176": {
+"name": "变化的比多少应用题",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 3
+},
+"177": {
+"name": "已知两量之间倍数关系和两量之差，求两个量",
+"module": "知识点",
+"n_questions": 51,
+"is_leaf": true,
+"depth": 4
+},
+"178": {
+"name": "减法的实际应用",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"179": {
+"name": "整数差倍",
+"module": "拓展思维",
+"n_questions": 34,
+"is_leaf": true,
+"depth": 5
+},
+"180": {
+"name": "暗差型二量差倍问题",
+"module": "拓展思维",
+"n_questions": 46,
+"is_leaf": true,
+"depth": 5
+},
+"181": {
+"name": "区分大月和小月",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"182": {
+"name": "计算星期几",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"183": {
+"name": "奇数阶幻方填法",
+"module": "拓展思维",
+"n_questions": 57,
+"is_leaf": true,
+"depth": 4
+},
+"184": {
+"name": "长方形数表中日期周期",
+"module": "课内题型",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"185": {
+"name": "变形幻方",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"186": {
+"name": "从统计图表中获取信息",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"187": {
+"name": "一笔画判断",
+"module": "拓展思维",
+"n_questions": 40,
+"is_leaf": true,
+"depth": 4
+},
+"188": {
+"name": "一笔画的应用",
+"module": "拓展思维",
+"n_questions": 60,
+"is_leaf": true,
+"depth": 4
+},
+"189": {
+"name": "不等变相等（无图）",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 4
+},
+"190": {
+"name": "标准六宫",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"191": {
+"name": "认识直角、锐角和钝角",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"192": {
+"name": "角的认知",
+"module": "拓展思维",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 5
+},
+"193": {
+"name": "多位小数的写法",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 6
+},
+"194": {
+"name": "多位小数比较大小",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"195": {
+"name": "小数加减竖式计算",
+"module": "课内知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"196": {
+"name": "小数比大小",
+"module": "课内知识点",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"197": {
+"name": "小数的计数单位（十分位、百分位、千分位）",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"198": {
+"name": "角度的计算",
+"module": "拓展思维",
+"n_questions": 50,
+"is_leaf": true,
+"depth": 5
+},
+"199": {
+"name": "利用特殊角的求角度",
+"module": "课内题型",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"200": {
+"name": "年龄问题基本关系和差问题",
+"module": "拓展思维",
+"n_questions": 37,
+"is_leaf": true,
+"depth": 4
+},
+"201": {
+"name": "分类枚举法数图形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"202": {
+"name": "年龄和",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 4
+},
+"203": {
+"name": "年龄问题之和倍型",
+"module": "拓展思维",
+"n_questions": 38,
+"is_leaf": true,
+"depth": 3
+},
+"204": {
+"name": "四则混合运算",
+"module": "拓展思维",
+"n_questions": 22,
+"is_leaf": true,
+"depth": 3
+},
+"205": {
+"name": "添去括号",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 5
+},
+"206": {
+"name": "必填符号型",
+"module": "拓展思维",
+"n_questions": 48,
+"is_leaf": true,
+"depth": 5
+},
+"207": {
+"name": "24点游戏",
+"module": "拓展思维",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 4
+},
+"208": {
+"name": "盈亏基本类型盈亏问题",
+"module": "拓展思维",
+"n_questions": 97,
+"is_leaf": true,
+"depth": 4
+},
+"209": {
+"name": "特殊点或区域",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 3
+},
+"210": {
+"name": "盈亏问题",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 2
+},
+"211": {
+"name": "恰好分完",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"212": {
+"name": "亏亏问题",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 4
+},
+"213": {
+"name": "加法拆数（指定个数）",
+"module": "拓展思维",
+"n_questions": 36,
+"is_leaf": true,
+"depth": 5
+},
+"214": {
+"name": "加法拆数（应用）",
+"module": "拓展思维",
+"n_questions": 81,
+"is_leaf": true,
+"depth": 5
+},
+"215": {
+"name": "给定个数分东西",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"216": {
+"name": "加法拆数（不完全相同数）",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 5
+},
+"217": {
+"name": "拆数数字可重复",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"218": {
+"name": "排列数",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"219": {
+"name": "无限制",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"220": {
+"name": "加减法凑整综合",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 5
+},
+"221": {
+"name": "明和明差",
+"module": "拓展思维",
+"n_questions": 18,
+"is_leaf": true,
+"depth": 5
+},
+"222": {
+"name": "排队问题",
+"module": "拓展思维",
+"n_questions": 27,
+"is_leaf": true,
+"depth": 3
+},
+"223": {
+"name": "加法原理里的其他类型",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"224": {
+"name": "简单的列方程解应用题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"225": {
+"name": "平行四边形面积公式",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 4
+},
+"226": {
+"name": "认识平行四边形的底、高",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"227": {
+"name": "公式法求平行四边形面积",
+"module": "课内题型",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"228": {
+"name": "上升数（下降数）",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 5
+},
+"229": {
+"name": "火柴棒摆数",
+"module": "课内题型",
+"n_questions": 33,
+"is_leaf": true,
+"depth": 5
+},
+"230": {
+"name": "火柴棒摆算式",
+"module": "课内题型",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 5
+},
+"231": {
+"name": "减法竖式谜",
+"module": "拓展思维",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 4
+},
+"232": {
+"name": "加法竖式谜",
+"module": "拓展思维",
+"n_questions": 78,
+"is_leaf": true,
+"depth": 4
+},
+"233": {
+"name": "乘法交换律",
+"module": "知识点",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 4
+},
+"234": {
+"name": "整数乘法运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"235": {
+"name": "乘法结合律",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"236": {
+"name": "整数四则混合运算",
+"module": "课内知识点",
+"n_questions": 22,
+"is_leaf": true,
+"depth": 3
+},
+"237": {
+"name": "拆数法构造分配律",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 5
+},
+"238": {
+"name": "不等变不等（给完还多）",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"239": {
+"name": "年龄差",
+"module": "拓展思维",
+"n_questions": 27,
+"is_leaf": true,
+"depth": 4
+},
+"240": {
+"name": "年龄轴",
+"module": "拓展思维",
+"n_questions": 33,
+"is_leaf": true,
+"depth": 4
+},
+"241": {
+"name": "长方形",
+"module": "拓展思维",
+"n_questions": 18,
+"is_leaf": true,
+"depth": 5
+},
+"242": {
+"name": "综合型转化",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 4
+},
+"243": {
+"name": "物品搭配（有特殊要求）",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 4
+},
+"244": {
+"name": "乘法原理",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": false,
+"depth": 3
+},
+"245": {
+"name": "排列的基本应用",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"246": {
+"name": "排列综合",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"247": {
+"name": "规则剪拼规则图形（无格）",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"248": {
+"name": "整数乘除混合运算",
+"module": "课内知识点",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 4
+},
+"249": {
+"name": "普通型",
+"module": "拓展思维",
+"n_questions": 28,
+"is_leaf": true,
+"depth": 4
+},
+"250": {
+"name": "找规律型定义新运算",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"251": {
+"name": "高斯记号的基本运算",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"252": {
+"name": "等差数列求项数",
+"module": "拓展思维",
+"n_questions": 37,
+"is_leaf": true,
+"depth": 4
+},
+"253": {
+"name": "等差数列实际应用",
+"module": "拓展思维",
+"n_questions": 15,
+"is_leaf": true,
+"depth": 2
+},
+"254": {
+"name": "图形规律",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 4
+},
+"255": {
+"name": "等差数列",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 3
+},
+"256": {
+"name": "其他染色",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 3
+},
+"257": {
+"name": "实心方阵基本问题",
+"module": "拓展思维",
+"n_questions": 86,
+"is_leaf": true,
+"depth": 4
+},
+"258": {
+"name": "实心方阵的增减",
+"module": "拓展思维",
+"n_questions": 24,
+"is_leaf": true,
+"depth": 4
+},
+"259": {
+"name": "方阵问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 2
+},
+"260": {
+"name": "空心方阵基本问题",
+"module": "拓展思维",
+"n_questions": 47,
+"is_leaf": true,
+"depth": 4
+},
+"261": {
+"name": "空心方阵的增减",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 4
+},
+"262": {
+"name": "淘汰赛",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"263": {
+"name": "单循环赛",
+"module": "拓展思维",
+"n_questions": 30,
+"is_leaf": true,
+"depth": 4
+},
+"264": {
+"name": "2-1-0 积分制",
+"module": "拓展思维",
+"n_questions": 20,
+"is_leaf": true,
+"depth": 4
+},
+"265": {
+"name": "多量和差问题",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 4
+},
+"266": {
+"name": "除法中四量关系",
+"module": "知识点",
+"n_questions": 64,
+"is_leaf": true,
+"depth": 4
+},
+"267": {
+"name": "和倍问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"268": {
+"name": "知少求多",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"269": {
+"name": "整数系数二元一次方程组解应用题",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"270": {
+"name": "抄错数得出结果，求正确的",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 4
+},
+"271": {
+"name": "时间中的周期问题",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 3
+},
+"272": {
+"name": "归总问题",
+"module": "拓展思维",
+"n_questions": 37,
+"is_leaf": true,
+"depth": 4
+},
+"273": {
+"name": "隐藏条件",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"274": {
+"name": "腿倍型",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"275": {
+"name": "用分组法解决变形鸡兔同笼",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"276": {
+"name": "头倍型",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"277": {
+"name": "公式法",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 5
+},
+"278": {
+"name": "公式法求相遇时间",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"279": {
+"name": "单人变速问题",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 4
+},
+"280": {
+"name": "同时同地出发折返相遇",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 5
+},
+"281": {
+"name": "任意四边形的一半模型",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"282": {
+"name": "两人相遇与追及问题",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 3
+},
+"283": {
+"name": "和系整除特征",
+"module": "知识点",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"284": {
+"name": "多位数的加减运算",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"285": {
+"name": "多位数的乘法运算",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"286": {
+"name": "整数拆数法构造分配律",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"287": {
+"name": "整数拆补凑整",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"288": {
+"name": "位置关系",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 5
+},
+"289": {
+"name": "翻杯子问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"290": {
+"name": "简单时间统筹问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 4
+},
+"291": {
+"name": "各点不等价",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 5
+},
+"292": {
+"name": "火车过人",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"293": {
+"name": "多人相遇追及问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"294": {
+"name": "物品代换",
+"module": "知识点",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"295": {
+"name": "已知两量之间几倍多（少）几和多份量，求一份量",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"296": {
+"name": "已知两量之间几倍多（少）几与一份量，求多份量",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"297": {
+"name": "方程基础",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 2
+},
+"298": {
+"name": "以盈亏问题形式运用方程解应用题",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"299": {
+"name": "阶梯型标数法",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 3
+},
+"300": {
+"name": "枚举所有可能的路线",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"301": {
+"name": "有序枚举",
+"module": "拓展思维",
+"n_questions": 23,
+"is_leaf": true,
+"depth": 4
+},
+"302": {
+"name": "五宫肯肯数独",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"303": {
+"name": "排列组合",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 2
+},
+"304": {
+"name": "传球型递推",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"305": {
+"name": "容斥求平均数",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"306": {
+"name": "数字组数（可重复）",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 5
+},
+"307": {
+"name": "周期问题",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 2
+},
+"308": {
+"name": "除法应用",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 4
+},
+"309": {
+"name": "单人工作运用公式求效率",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"310": {
+"name": "锯木头类型问题",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"311": {
+"name": "两端植树类型问题(段数小于等于10)",
+"module": "拓展思维",
+"n_questions": 18,
+"is_leaf": true,
+"depth": 5
+},
+"312": {
+"name": "给几个数字通过枚举求出组成几位数的个数",
+"module": "课内知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"313": {
+"name": "一般组数问题",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 4
+},
+"314": {
+"name": "付钱方法枚举",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 5
+},
+"315": {
+"name": "已知各个数，求平均数",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"316": {
+"name": "异分母分数加减法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"317": {
+"name": "通分母",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"318": {
+"name": "整数乘法结合律",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"319": {
+"name": "整数利用积/商不变性质",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 5
+},
+"320": {
+"name": "面积单位换算",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": false,
+"depth": 4
+},
+"321": {
+"name": "长度单位换算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"322": {
+"name": "加法的实际应用",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"323": {
+"name": "二量和倍问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"324": {
+"name": "多量和倍问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 4
+},
+"325": {
+"name": "两量差倍",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": false,
+"depth": 4
+},
+"326": {
+"name": "正方形周长公式",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"327": {
+"name": "计算模块",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": false,
+"depth": 1
+},
+"328": {
+"name": "时间中的周期",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"329": {
+"name": "求某日期是周几问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"330": {
+"name": "幻方数字关系",
+"module": "拓展思维",
+"n_questions": 28,
+"is_leaf": true,
+"depth": 3
+},
+"331": {
+"name": "选线计算型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"332": {
+"name": "偶数阶幻方填法",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"333": {
+"name": "计算平均数",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"334": {
+"name": "组合模块",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 1
+},
+"335": {
+"name": "多笔画运用",
+"module": "拓展思维",
+"n_questions": 34,
+"is_leaf": true,
+"depth": 4
+},
+"336": {
+"name": "变型题",
+"module": "拓展思维",
+"n_questions": 57,
+"is_leaf": true,
+"depth": 5
+},
+"337": {
+"name": "用假设法解决倒扣型鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"338": {
+"name": "几何模块",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 1
+},
+"339": {
+"name": "用假设法解决变形鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 4
+},
+"340": {
+"name": "小数的认识",
+"module": "课内知识点",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 4
+},
+"341": {
+"name": "减法竖式",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"342": {
+"name": "加法竖式",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"343": {
+"name": "数、数位、数字的认识",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"344": {
+"name": "角的判断",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"345": {
+"name": "转化代换",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"346": {
+"name": "等量关系",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"347": {
+"name": "等量代换传递型",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"348": {
+"name": "代值运算",
+"module": "知识点",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 4
+},
+"349": {
+"name": "字母表示数",
+"module": "知识点",
+"n_questions": 23,
+"is_leaf": false,
+"depth": 4
+},
+"350": {
+"name": "用字母表示数量关系(a+bx)",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"351": {
+"name": "用字母表示数量关系（ax＋bx）",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"352": {
+"name": "盈盈问题",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 4
+},
+"353": {
+"name": "乘法拆数",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"354": {
+"name": "乘法拆数（应用）",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"355": {
+"name": "整数拆分应用",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 4
+},
+"356": {
+"name": "两边都填符号型",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"357": {
+"name": "加法拆数（无要求）",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"358": {
+"name": "提取公因数",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"359": {
+"name": "找暗和",
+"module": "拓展思维",
+"n_questions": 21,
+"is_leaf": true,
+"depth": 4
+},
+"360": {
+"name": "数形结合的实际应用",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"361": {
+"name": "公式法求三角形面积",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"362": {
+"name": "三角形面积",
+"module": "知识点",
+"n_questions": 9,
+"is_leaf": false,
+"depth": 5
+},
+"363": {
+"name": "带余除法",
+"module": "课内知识点",
+"n_questions": 13,
+"is_leaf": false,
+"depth": 5
+},
+"364": {
+"name": "余数和除数的关系",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"365": {
+"name": "周长定义",
+"module": "知识点",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 3
+},
+"366": {
+"name": "已知边长求周长",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"367": {
+"name": "有特殊要求的组数问题",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"368": {
+"name": "找日历中的周期规律",
+"module": "知识点",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 3
+},
+"369": {
+"name": "区分闰年和平年",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"370": {
+"name": "暗倍型二量差倍问题",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"371": {
+"name": "绘制统计表",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"372": {
+"name": "边长改变后长方形面积的计算",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 5
+},
+"373": {
+"name": "公式求长方形面积",
+"module": "知识点",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 4
+},
+"374": {
+"name": "多笔画变一笔画",
+"module": "拓展思维",
+"n_questions": 12,
+"is_leaf": true,
+"depth": 4
+},
+"375": {
+"name": "复式统计表",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"376": {
+"name": "总价=单价×数量",
+"module": "知识点",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 3
+},
+"377": {
+"name": "加减法应用",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 2
+},
+"378": {
+"name": "因数与倍数基础",
+"module": "课内知识点",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 3
+},
+"379": {
+"name": "给运算方法和结果，求开始",
+"module": "知识点",
+"n_questions": 14,
+"is_leaf": true,
+"depth": 4
+},
+"380": {
+"name": "利用特殊角求角度",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"381": {
+"name": "数列规律",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 4
+},
+"382": {
+"name": "小数点的移动规律",
+"module": "课内知识点",
+"n_questions": 17,
+"is_leaf": true,
+"depth": 4
+},
+"383": {
+"name": "小数点的移动",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"384": {
+"name": "元、角、分单位换算",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"385": {
+"name": "数与图结合找规律（多图）",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"386": {
+"name": "分类图形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"387": {
+"name": "盈亏基本类型",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"388": {
+"name": "整数加减巧算之分组法",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"389": {
+"name": "整数基准数法",
+"module": "拓展思维",
+"n_questions": 16,
+"is_leaf": true,
+"depth": 5
+},
+"390": {
+"name": "整数减法性质",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"391": {
+"name": "两位数减整十数的口算",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"392": {
+"name": "组合数",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"393": {
+"name": "多数的最大公因数",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"394": {
+"name": "整体思想求面积",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"395": {
+"name": "图文减法竖式数字谜",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"396": {
+"name": "竖式数字谜",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 3
+},
+"397": {
+"name": "整数拆补构造",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"398": {
+"name": "整数直接运用分配律",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"399": {
+"name": "直线、射线、线段分类",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"400": {
+"name": "线段、直线与射线认识",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"401": {
+"name": "明和暗差",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 5
+},
+"402": {
+"name": "直线和交点",
+"module": "课内题型",
+"n_questions": 41,
+"is_leaf": true,
+"depth": 4
+},
+"403": {
+"name": "数与图结合找规律（单图）",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"404": {
+"name": "空心方阵综合问题",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 4
+},
+"405": {
+"name": "实心方阵综合问题",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 4
+},
+"406": {
+"name": "非整百年闰年和平年的判断",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"407": {
+"name": "应用题模块",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": false,
+"depth": 1
+},
+"408": {
+"name": "对象转化为物品",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"409": {
+"name": "整除特征综合",
+"module": "知识点",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 4
+},
+"410": {
+"name": "倍数的认识",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"411": {
+"name": "2的倍数特征",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"412": {
+"name": "5的倍数特征",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"413": {
+"name": "运算律",
+"module": "知识点",
+"n_questions": 16,
+"is_leaf": false,
+"depth": 2
+},
+"414": {
+"name": "数回",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"415": {
+"name": "年龄问题之变倍型",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"416": {
+"name": "逐步调整思想",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 1
+},
+"417": {
+"name": "数形结合思想",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 1
+},
+"418": {
+"name": "数字操作",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"419": {
+"name": "反解未知数型",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"420": {
+"name": "三角阵基本问题",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"421": {
+"name": "多个人做一件事的时间优化",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"422": {
+"name": "各点等价",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 5
+},
+"423": {
+"name": "优惠情况下的付钱方法",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"424": {
+"name": "简单抽屉原理",
+"module": "拓展思维",
+"n_questions": 19,
+"is_leaf": true,
+"depth": 3
+},
+"425": {
+"name": "最不利原则",
+"module": "拓展思维",
+"n_questions": 34,
+"is_leaf": true,
+"depth": 3
+},
+"426": {
+"name": "构造型抽屉原理",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 3
+},
+"427": {
+"name": "图形数独",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"428": {
+"name": "租船，租车，大车小车价钱最符合方案",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"429": {
+"name": "数与形数形结合思想",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"430": {
+"name": "倍数应用题",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"431": {
+"name": "数字个数",
+"module": "拓展思维",
+"n_questions": 25,
+"is_leaf": true,
+"depth": 4
+},
+"432": {
+"name": "平均分",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"433": {
+"name": "行程中的反比例",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"434": {
+"name": "和不变",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"435": {
+"name": "3-1-0 积分制",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"436": {
+"name": "钱的计算",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 5
+},
+"437": {
+"name": "量率对应求单位1",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"438": {
+"name": "平方数列",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"439": {
+"name": "整数等比数列",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"440": {
+"name": "斐波那契数列递推",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"441": {
+"name": "图形分面递推",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"442": {
+"name": "平行四边形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 5
+},
+"443": {
+"name": "线分面递推",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"444": {
+"name": "切披萨",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"445": {
+"name": "二级等差数列",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"446": {
+"name": "数形结合找规律",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"447": {
+"name": "平行四边形面积",
+"module": "知识点",
+"n_questions": 7,
+"is_leaf": false,
+"depth": 3
+},
+"448": {
+"name": "四边形的认识",
+"module": "拓展思维",
+"n_questions": 20,
+"is_leaf": true,
+"depth": 4
+},
+"449": {
+"name": "基础变倍",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"450": {
+"name": "两量同时变倍",
+"module": "拓展思维",
+"n_questions": 11,
+"is_leaf": true,
+"depth": 4
+},
+"451": {
+"name": "梯形面积公式应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"452": {
+"name": "图形等分",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"453": {
+"name": "多人相遇问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"454": {
+"name": "归纳递推",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"455": {
+"name": "变倍问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"456": {
+"name": "逻辑推理",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"457": {
+"name": "假设法解鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 3
+},
+"458": {
+"name": "构造与论证",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 2
+},
+"459": {
+"name": "差系整除特征的应用",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"460": {
+"name": "尾数系中的最值",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"461": {
+"name": "基础复合数字的整除特征",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"462": {
+"name": "两次分配对象不同",
+"module": "拓展思维",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"463": {
+"name": "方程法解比例问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"464": {
+"name": "图形平移旋转",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"465": {
+"name": "复杂的比例问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"466": {
+"name": "复合型不规则图形求周长",
+"module": "拓展思维",
+"n_questions": 10,
+"is_leaf": true,
+"depth": 5
+},
+"467": {
+"name": "方程法解盈亏问题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"468": {
+"name": "倒扣型",
+"module": "拓展思维",
+"n_questions": 18,
+"is_leaf": true,
+"depth": 4
+},
+"469": {
+"name": "三角形的认识",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"470": {
+"name": "封闭路线植树问题",
+"module": "知识点",
+"n_questions": 9,
+"is_leaf": true,
+"depth": 4
+},
+"471": {
+"name": "路线遍历",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 3
+},
+"472": {
+"name": "小数的性质",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"473": {
+"name": "小数读写规则",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"474": {
+"name": "小数的计数单位",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"475": {
+"name": "多笔画",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"476": {
+"name": "简单乘法巧算",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"477": {
+"name": "数字组数（规定数位大小）",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 5
+},
+"478": {
+"name": "优限法",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"479": {
+"name": "分割与剪拼",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"480": {
+"name": "小马虎题型",
+"module": "拓展思维",
+"n_questions": 36,
+"is_leaf": true,
+"depth": 3
+},
+"481": {
+"name": "和的奇偶性",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"482": {
+"name": "数据处理",
+"module": "学习能力",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 2
+},
+"483": {
+"name": "直接运用公式求数量",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"484": {
+"name": "统计图表",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"485": {
+"name": "三角形三边关系（两边之和大于第三边）",
+"module": "课内知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"486": {
+"name": "等腰三角形",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"487": {
+"name": "多边形内角和",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"488": {
+"name": "整数除法运算",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 4
+},
+"489": {
+"name": "多量倍",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"490": {
+"name": "已知两量之间倍数关系和多份量，求一份量",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"491": {
+"name": "幻方",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 2
+},
+"492": {
+"name": "平行四边形面积公式逆用",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"493": {
+"name": "带余除法的估算",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"494": {
+"name": "分类讨论思想",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 1
+},
+"495": {
+"name": "不等变相等（有图）",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"496": {
+"name": "给定面值求组成可能",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"497": {
+"name": "除法的意义",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"498": {
+"name": "认识单位1",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"499": {
+"name": "四宫杀手数独",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"500": {
+"name": "图形折叠展开",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 5
+},
+"501": {
+"name": "相邻数字只填加号组数",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"502": {
+"name": "平移法求组合图形周长",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"503": {
+"name": "加乘原理",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 2
+},
+"504": {
+"name": "平行四边形面积公式应用",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"505": {
+"name": "方程法解其他问题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"506": {
+"name": "握手碰杯问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"507": {
+"name": "整数除法性质",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"508": {
+"name": "公式求正方形面积",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"509": {
+"name": "正方形的面积公式逆用",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"510": {
+"name": "暗倍型和倍问题",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"511": {
+"name": "求再过几日是周几问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"512": {
+"name": "积幻方",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"513": {
+"name": "单一对象折线图",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"514": {
+"name": "复式折线统计图",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"515": {
+"name": "弦图求面积",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"516": {
+"name": "旋转割补求面积",
+"module": "课内题型",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"517": {
+"name": "小数加法运算",
+"module": "课内知识点",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"518": {
+"name": "小数比较大小",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 4
+},
+"519": {
+"name": "三角形内外角度",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"520": {
+"name": "角",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 5
+},
+"521": {
+"name": "与倍数相关",
+"module": "拓展思维",
+"n_questions": 13,
+"is_leaf": true,
+"depth": 4
+},
+"522": {
+"name": "和差问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"523": {
+"name": "等差数列截断求和",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"524": {
+"name": "用字母表示数量关系ax",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"525": {
+"name": "积的乘方",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"526": {
+"name": "巧填算符",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 3
+},
+"527": {
+"name": "正方形面积",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"528": {
+"name": "1000以内数的组成和读写",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"529": {
+"name": "整数加减巧算之凑整法",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 4
+},
+"530": {
+"name": "一位小数比较大小",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"531": {
+"name": "角度直接运算",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"532": {
+"name": "以和差倍问题形式运用方程解应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"533": {
+"name": "简单的周期规律",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"534": {
+"name": "求只数",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"535": {
+"name": "用假设法解决基础鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"536": {
+"name": "不约分分数的认识",
+"module": "课内知识点",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 5
+},
+"537": {
+"name": "单位换算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"538": {
+"name": "小数化为分数",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"539": {
+"name": "分数化为小数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"540": {
+"name": "小数加减",
+"module": "课内知识点",
+"n_questions": 7,
+"is_leaf": false,
+"depth": 3
+},
+"541": {
+"name": "小数拆补凑整",
+"module": "课内知识点",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 5
+},
+"542": {
+"name": "已知时间求角度",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"543": {
+"name": "数角",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"544": {
+"name": "正三角形计数",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"545": {
+"name": "格点构造数图形",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"546": {
+"name": "三角形计数",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"547": {
+"name": "年龄差不变",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"548": {
+"name": "乘方的幂运算",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"549": {
+"name": "乘方的乘法运算",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"550": {
+"name": "完全平方公式",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"551": {
+"name": "小数加减巧算之位值原理",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"552": {
+"name": "平方差公式正向应用",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"553": {
+"name": "平方差公式逆向应用",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"554": {
+"name": "整数换元法",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 3
+},
+"555": {
+"name": "给定小格求周长",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"556": {
+"name": "求倍数关系",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"557": {
+"name": "用2~5的乘法口诀求商",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"558": {
+"name": "平行四边形概念与分类",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"559": {
+"name": "笔算乘法：两位数乘两位数（不进位）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"560": {
+"name": "用6的乘法口诀求商",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"561": {
+"name": "非数字排列",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"562": {
+"name": "笔算乘法：两位数乘两位数（进位）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"563": {
+"name": "三位数乘两位数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"564": {
+"name": "笔算乘法：三位数乘两位数",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"565": {
+"name": "封闭植树类型问题(段数小于等于10)",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"566": {
+"name": "不等变不等（给完还少）",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"567": {
+"name": "二量和差问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"568": {
+"name": "余数问题带余除法",
+"module": "知识点",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 3
+},
+"569": {
+"name": "整数除法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"570": {
+"name": "差不变",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"571": {
+"name": "多笔画的判断",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"572": {
+"name": "以年龄问题形式运用方程解应用题",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"573": {
+"name": "乘方的混合运算",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"574": {
+"name": "用字母表示运算定律和计算公式",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"575": {
+"name": "多重数列",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"576": {
+"name": "枚举法",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"577": {
+"name": "多位数除以多位数",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"578": {
+"name": "图形平移",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"579": {
+"name": "假设法判断真假",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"580": {
+"name": "数字与页码的对应问题",
+"module": "拓展思维",
+"n_questions": 5,
+"is_leaf": false,
+"depth": 3
+},
+"581": {
+"name": "数字个数应用",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"582": {
+"name": "程序性计算",
+"module": "能力",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 2
+},
+"583": {
+"name": "口算乘法：整百数乘一位数",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"584": {
+"name": "整数特殊数的应用",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"585": {
+"name": "树与间隔的数量关系",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"586": {
+"name": "两端都不植树类型问题(段数大于10)",
+"module": "拓展思维",
+"n_questions": 8,
+"is_leaf": true,
+"depth": 5
+},
+"587": {
+"name": "初步认识平面图形",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"588": {
+"name": "正方形边角特点",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"589": {
+"name": "规则图形拼规则图形",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"590": {
+"name": "组合的基本应用",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"591": {
+"name": "改变其中一个数，求新的平均数",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"592": {
+"name": "量率对应求单位一",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"593": {
+"name": "最简分数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"594": {
+"name": "异分母分数加法",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"595": {
+"name": "部分占整体的几分之几",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 6
+},
+"596": {
+"name": "剪绳子",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"597": {
+"name": "图形重复",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"598": {
+"name": "网格型",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": true,
+"depth": 4
+},
+"599": {
+"name": "四宫区域变形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"600": {
+"name": "简单的数独游戏",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 2
+},
+"601": {
+"name": "20以内组算式",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"602": {
+"name": "小数加减混合运算",
+"module": "课内知识点",
+"n_questions": 5,
+"is_leaf": true,
+"depth": 4
+},
+"603": {
+"name": "表内除法计算",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"604": {
+"name": "一端植树类型问题(段数小于等于10)",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"605": {
+"name": "对称类游戏",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"606": {
+"name": "等式的性质",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"607": {
+"name": "平方厘米、平方分米和平方米的单位换算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"608": {
+"name": "“正”字法记录数据",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"609": {
+"name": "已知长宽变化，求面积变化",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"610": {
+"name": "数线段条数",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"611": {
+"name": "整数乘法分配律",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"612": {
+"name": "等差数列的概念",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 4
+},
+"613": {
+"name": "巧填括号型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"614": {
+"name": "余数特征",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"615": {
+"name": "口算乘法：两位数乘两位数（不进位）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"616": {
+"name": "认识0",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"617": {
+"name": "已知锯成某几段的时间，求锯成其他段数的时间",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"618": {
+"name": "字典排序法",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"619": {
+"name": "简单的周期计算",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"620": {
+"name": "认识面积单位",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"621": {
+"name": "等高模型正用多次应用",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 6
+},
+"622": {
+"name": "平行四边形的判断",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"623": {
+"name": "逆向思想",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 1
+},
+"624": {
+"name": "折线统计图",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"625": {
+"name": "多量容斥的几何计数",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 3
+},
+"626": {
+"name": "加减法应用顺口溜",
+"module": "拓展思维",
+"n_questions": 7,
+"is_leaf": true,
+"depth": 3
+},
+"627": {
+"name": "多边形的内角和",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"628": {
+"name": "平移法求周长",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"629": {
+"name": "用去尾法根据实际情况的运用",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"630": {
+"name": "多项式结合图形面积",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"631": {
+"name": "一端植树问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"632": {
+"name": "两端不植树问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"633": {
+"name": "两端植树两侧都种类型问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"634": {
+"name": "不约分分数的比较",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"635": {
+"name": "一端植树类型问题(段数大于10)",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"636": {
+"name": "鸡兔同笼问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"637": {
+"name": "两次假设",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"638": {
+"name": "特殊数字系列",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"639": {
+"name": "等差数列与估算",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"640": {
+"name": "笔算除法：三位数除以两位数",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"641": {
+"name": "等式只填加减号",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"642": {
+"name": "已知乘积求因数",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"643": {
+"name": "其它图形分割",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"644": {
+"name": "真假话",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 4
+},
+"645": {
+"name": "列表法找对应",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"646": {
+"name": "添线法计数",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"647": {
+"name": "多位数中的提公因数",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"648": {
+"name": "多位数的运算和数字和相关",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"649": {
+"name": "等差数列长方形数表之已知位置求数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"650": {
+"name": "等差数列长方形数表之已知数求位置",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"651": {
+"name": "删线法计数",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"652": {
+"name": "长方形的一半模型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"653": {
+"name": "面积公式的综合应用",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"654": {
+"name": "三角形面积公式应用",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"655": {
+"name": "一笔画",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"656": {
+"name": "标准四宫",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"657": {
+"name": "整数加法运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"658": {
+"name": "加减抵消法",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 5
+},
+"659": {
+"name": "利用奇偶规律构算式",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"660": {
+"name": "解方程：ax＋b＝c这种类型",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"661": {
+"name": "年龄问题基本关系",
+"module": "拓展思维",
+"n_questions": 6,
+"is_leaf": false,
+"depth": 3
+},
+"662": {
+"name": "几何思想平移",
+"module": "拓展思维",
+"n_questions": 22,
+"is_leaf": true,
+"depth": 4
+},
+"663": {
+"name": "几何思想旋转",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"664": {
+"name": "不规则多边形的面积",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"665": {
+"name": "乘法的实际应用",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"666": {
+"name": "同时进行问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"667": {
+"name": "分数拆分",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"668": {
+"name": "通项归纳",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"669": {
+"name": "线确定点递推",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"670": {
+"name": "梯形面积",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"671": {
+"name": "操作问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"672": {
+"name": "拆分数的数目不确定",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"673": {
+"name": "摸小球",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"674": {
+"name": "加法拆数（指定数）",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"675": {
+"name": "点线排布的实际应用",
+"module": "课内题型",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"676": {
+"name": "点线排布的最值",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"677": {
+"name": "包含与排除条件（不重叠）",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"678": {
+"name": "归一归总问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"679": {
+"name": "进水与排水问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"680": {
+"name": "转化为菜园，围栏之类的周长问题",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"681": {
+"name": "程序流程型",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"682": {
+"name": "图形认知角",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"683": {
+"name": "计数与数字谜",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"684": {
+"name": "枚举思想",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 1
+},
+"685": {
+"name": "等高模型正用一次应用",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 6
+},
+"686": {
+"name": "连筐（桶、瓶等）带物（不考虑筐桶瓶等重量）",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"687": {
+"name": "暗和明差",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"688": {
+"name": "割补平移求多边形面积",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"689": {
+"name": "点确定线递推",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"690": {
+"name": "矩形队伍求总数",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"691": {
+"name": "六边形阵基本问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"692": {
+"name": "韦恩图",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"693": {
+"name": "以文字题形式运用方程解应用题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"694": {
+"name": "2-0  积分制",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"695": {
+"name": "数列操作周期问题",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"696": {
+"name": "乘方的应用",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"697": {
+"name": "求第几个数是多少问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"698": {
+"name": "直线型行程问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 2
+},
+"699": {
+"name": "具体量工程问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"700": {
+"name": "差系整除特征",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"701": {
+"name": "尾数系整除特征应用",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"702": {
+"name": "奇数与偶数的判断",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"703": {
+"name": "重叠直线型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"704": {
+"name": "小数基础",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"705": {
+"name": "其他变形数独",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"706": {
+"name": "多元一次方程解应用题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"707": {
+"name": "分组法解鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"708": {
+"name": "黑白染色",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"709": {
+"name": "表内乘法计算",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"710": {
+"name": "多位数除以一位数",
+"module": "课内知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"711": {
+"name": "乘法的认识",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"712": {
+"name": "错车",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"713": {
+"name": "两次相遇",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"714": {
+"name": "剪拼长正方形周长的变化",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"715": {
+"name": "用进一法根据实际情况的运用",
+"module": "课内题型",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"716": {
+"name": "余数的可乘性",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"717": {
+"name": "平行四边形与梯形的相互变化",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"718": {
+"name": "余数性质综合",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"719": {
+"name": "面积",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 2
+},
+"720": {
+"name": "反倍型二量差倍问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"721": {
+"name": "重叠集合型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"722": {
+"name": "取火柴棒类游戏",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"723": {
+"name": "最值原理在几何中的应用",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"724": {
+"name": "抽取卡片组数",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"725": {
+"name": "已知总数，求平均数",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"726": {
+"name": "乘法运算数列",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"727": {
+"name": "加减综合",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"728": {
+"name": "数字排列规律",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"729": {
+"name": "复合数字的整除特征应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"730": {
+"name": "不定方程解应用题",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"731": {
+"name": "横式与竖式的转换",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"732": {
+"name": "7的乘法",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"733": {
+"name": "中间带0的除法",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"734": {
+"name": "笔算除法：两位数除以一位数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"735": {
+"name": "口算除法：两位数除以一位数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"736": {
+"name": "积不变性质",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"737": {
+"name": "分数的分类",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"738": {
+"name": "两分数直接裂差",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"739": {
+"name": "末一位数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"740": {
+"name": "构造平行线",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"741": {
+"name": "小数",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"742": {
+"name": "小数四则运算",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"743": {
+"name": "等高模型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"744": {
+"name": "多量容斥的最值问题",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"745": {
+"name": "对应法数图形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"746": {
+"name": "相遇问题求某方速度",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"747": {
+"name": "往返相遇",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"748": {
+"name": "图形认知平行四边形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"749": {
+"name": "转化为菜园，围栏之类的面积问题",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"750": {
+"name": "已知单位一和部分量，求分率（百分数）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"751": {
+"name": "分组法",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"752": {
+"name": "方中圆、圆中方",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"753": {
+"name": "暗和暗差",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"754": {
+"name": "两数之积的最值",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"755": {
+"name": "设数法",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"756": {
+"name": "同时出发背向而行",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"757": {
+"name": "变倍型二量差倍问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"758": {
+"name": "乘法分配律",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"759": {
+"name": "分组组合",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"760": {
+"name": "钉子板画图形",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"761": {
+"name": "编码",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 2
+},
+"762": {
+"name": "时间计算",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"763": {
+"name": "多位数减法",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"764": {
+"name": "符号化数学原理",
+"module": "能力",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 2
+},
+"765": {
+"name": "认识长度单位",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"766": {
+"name": "已知两人现在年龄，求几年后（前）是n倍",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"767": {
+"name": "认识梯形的底、高",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"768": {
+"name": "已知单位一和部分量，求分率",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"769": {
+"name": "乘积末尾0的个数",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"770": {
+"name": "等边三角形",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"771": {
+"name": "三角形的分类",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 5
+},
+"772": {
+"name": "解方程：a（x－b）＝c这种类型",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"773": {
+"name": "末尾带0的乘法",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"774": {
+"name": "笔算除法：三位数除以一位数",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"775": {
+"name": "余数的可加性",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"776": {
+"name": "余数找规律",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"777": {
+"name": "平面图形分类",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"778": {
+"name": "单复式统计表互化",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"779": {
+"name": "梯形的概念",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"780": {
+"name": "方向",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"781": {
+"name": "构造格点",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"782": {
+"name": "正方形和长方形",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 4
+},
+"783": {
+"name": "实心方阵",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"784": {
+"name": "标数法",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": false,
+"depth": 2
+},
+"785": {
+"name": "整数分拆",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"786": {
+"name": "路程速度时间",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"787": {
+"name": "余数问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"788": {
+"name": "梯形的上底、下底和高",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"789": {
+"name": "一边一种物体的天平代换",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"790": {
+"name": "一边有多种物体的天平代换",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"791": {
+"name": "文字转化为算式代换",
+"module": "知识点",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 4
+},
+"792": {
+"name": "等量代换加减型",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"793": {
+"name": "连筐（桶、瓶等）带物（考虑筐桶瓶等重量）",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"794": {
+"name": "夹子及图钉问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"795": {
+"name": "减法横式",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"796": {
+"name": "比赛比分可能性的枚举",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"797": {
+"name": "时间的计算",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"798": {
+"name": "时间单位换算",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"799": {
+"name": "数字与字母结合",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"800": {
+"name": "取近似值",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"801": {
+"name": "中项和首项、末项的关系",
+"module": "拓展思维",
+"n_questions": 4,
+"is_leaf": true,
+"depth": 4
+},
+"802": {
+"name": "标准标数法",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": false,
+"depth": 3
+},
+"803": {
+"name": "巧填算符中的最值",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"804": {
+"name": "平行四边形性质综合应用",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"805": {
+"name": "中心对称等分平行四边形面积",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"806": {
+"name": "等高模型反用",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"807": {
+"name": "鸟头模型",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"808": {
+"name": "加法不定方程",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"809": {
+"name": "比较型逻辑推理",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 3
+},
+"810": {
+"name": "已知长宽关系，求周长",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"811": {
+"name": "进制间的互化",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"812": {
+"name": "进制应用",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"813": {
+"name": "进制乘除运算",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"814": {
+"name": "连锁约分",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"815": {
+"name": "分数换元法",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"816": {
+"name": "繁分数计算",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"817": {
+"name": "整体约分",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"818": {
+"name": "直接提取公因数/式",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"819": {
+"name": "直线",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"820": {
+"name": "植树问题",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"821": {
+"name": "凑整",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"822": {
+"name": "使用三角板，量角器画图",
+"module": "课内题型",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"823": {
+"name": "画指定度数的角",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"824": {
+"name": "找一致（同伙）",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 5
+},
+"825": {
+"name": "方程法解鸡兔同笼",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"826": {
+"name": "计数模块",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"827": {
+"name": "小数加减巧算之分组法",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"828": {
+"name": "小数同尾相减",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"829": {
+"name": "直接代换",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"830": {
+"name": "小数基准数法",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"831": {
+"name": "奇偶点问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"832": {
+"name": "小数“好朋友数”的应用",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"833": {
+"name": "水平移动（会画图）",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"834": {
+"name": "沿线剪拼规则图形（有格）",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 5
+},
+"835": {
+"name": "差倍",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"836": {
+"name": "横式数字谜的最值",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"837": {
+"name": "基本合作问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"838": {
+"name": "基本型",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 4
+},
+"839": {
+"name": "移多补少",
+"module": "拓展思维",
+"n_questions": 2,
+"is_leaf": false,
+"depth": 3
+},
+"840": {
+"name": "给定总价钱的不同面值的组成",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"841": {
+"name": "直接运用公式求总价",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"842": {
+"name": "量率对应已知单位1",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"843": {
+"name": "已知部分量的平均数，求总体对的平均数",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"844": {
+"name": "长方体与正方体",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"845": {
+"name": "小数除法巧算之提取公除数（普通型）",
+"module": "课内知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"846": {
+"name": "空心方阵",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 3
+},
+"847": {
+"name": "等量代换替换型",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"848": {
+"name": "平面几何加工",
+"module": "能力",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 2
+},
+"849": {
+"name": "分数化为小数",
+"module": "课内知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 5
+},
+"850": {
+"name": "数桥",
+"module": "拓展思维",
+"n_questions": 3,
+"is_leaf": true,
+"depth": 3
+},
+"851": {
+"name": "菱形的周长与面积",
+"module": "课内题型",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"852": {
+"name": "根据一个方向辨认其余方向",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"853": {
+"name": "两位数乘一位数（连续进位）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"854": {
+"name": "三位数乘一位数（中间带0的乘法）",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 5
+},
+"855": {
+"name": "团体票、成人票、学生票的对比选择方案",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 4
+},
+"856": {
+"name": "除法运算结果估算",
+"module": "知识点",
+"n_questions": 2,
+"is_leaf": true,
+"depth": 4
+},
+"857": {
+"name": "乘除法应用",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"858": {
+"name": "时钟上的规律",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": true,
+"depth": 3
+},
+"859": {
+"name": "年龄问题",
+"module": "拓展思维",
+"n_questions": 1,
+"is_leaf": false,
+"depth": 2
+},
+"860": {
+"name": "由一元二次方程的解求参数的值",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"861": {
+"name": "一元二次方程的定义",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"862": {
+"name": "由一元二次方程定义求参数的值",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"863": {
+"name": "已知上到某楼的时间，求上到其他楼层的时间",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 4
+},
+"864": {
+"name": "年龄问题类型之和倍、差倍、和差",
+"module": "知识点",
+"n_questions": 1,
+"is_leaf": true,
+"depth": 3
+},
+"865": {
+"name": "拓展思维",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"866": {
+"name": "直线型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"867": {
+"name": "几何思想与方法",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"868": {
+"name": "不规则四边形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"869": {
+"name": "长方形和正方形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"870": {
+"name": "课内题型",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"871": {
+"name": "空间与图形",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"872": {
+"name": "几何图形",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"873": {
+"name": "四边形",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"874": {
+"name": "七大能力",
+"module": "学习能力",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"875": {
+"name": "知识点",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"876": {
+"name": "条件型逻辑推理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"877": {
+"name": "假设型逻辑推理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"878": {
+"name": "数学广角",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"879": {
+"name": "推理",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"880": {
+"name": "整数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"881": {
+"name": "整数构造提取",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"882": {
+"name": "整数分配律",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"883": {
+"name": "整数乘除",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"884": {
+"name": "数学游戏",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"885": {
+"name": "几何计数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"886": {
+"name": "乘法计数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"887": {
+"name": "常规图形枚举计数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"888": {
+"name": "封闭型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"889": {
+"name": "封闭型植树问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"890": {
+"name": "直线型两端都有",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"891": {
+"name": "应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"892": {
+"name": "植树应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"893": {
+"name": "综合与实践",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"894": {
+"name": "直线型两端都没有",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"895": {
+"name": "行程模块",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"896": {
+"name": "课内知识点",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"897": {
+"name": "测量",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"898": {
+"name": "周长",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"899": {
+"name": "归一归总应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"900": {
+"name": "总价问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"901": {
+"name": "数据的分析",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"902": {
+"name": "数据收集和整理",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"903": {
+"name": "数据整理",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"904": {
+"name": "统计与概率",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"905": {
+"name": "指定数字与页码的对应问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"906": {
+"name": "图形的认识",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"907": {
+"name": "认识平面图形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"908": {
+"name": "四边形的初步认识",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"909": {
+"name": "认识梯形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"910": {
+"name": "图形认知梯形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"911": {
+"name": "行程应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"912": {
+"name": "认识平行四边形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"913": {
+"name": "追及问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"914": {
+"name": "相遇问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"915": {
+"name": "数论模块",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"916": {
+"name": "奇数与偶数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"917": {
+"name": "数的认识",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"918": {
+"name": "数的特征",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"919": {
+"name": "奇数和偶数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"920": {
+"name": "数字谜",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"921": {
+"name": "整除",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"922": {
+"name": "整除特征",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"923": {
+"name": "倍数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"924": {
+"name": "整数加减",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"925": {
+"name": "数表规律",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"926": {
+"name": "长方形数表",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"927": {
+"name": "操作与策略",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"928": {
+"name": "统筹规划",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"929": {
+"name": "式与方程",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"930": {
+"name": "数量关系",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"931": {
+"name": "简易方程（一元一次）",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"932": {
+"name": "解简易方程",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"933": {
+"name": "简易方程",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"934": {
+"name": "等量代换",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"935": {
+"name": "一元一次方程",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"936": {
+"name": "不规则多边形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"937": {
+"name": "枚举法综合",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"938": {
+"name": "组数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"939": {
+"name": "搭配",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"940": {
+"name": "智巧趣题",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"941": {
+"name": "公式类",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"942": {
+"name": "综合题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"943": {
+"name": "分数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"944": {
+"name": "分数运算",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"945": {
+"name": "分数基础",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"946": {
+"name": "数与运算",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"947": {
+"name": "除法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"948": {
+"name": "倍的基本计算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"949": {
+"name": "倍数问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"950": {
+"name": "数的运算的实际应用（应用题）",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"951": {
+"name": "整数的简单实际问题",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"952": {
+"name": "常见的量",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"953": {
+"name": "年、月、日",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"954": {
+"name": "认识年、月、日",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"955": {
+"name": "日历表",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"956": {
+"name": "和幻方",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"957": {
+"name": "数表",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"958": {
+"name": "统计结果分析",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"959": {
+"name": "图论问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"960": {
+"name": "数独",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"961": {
+"name": "标准数独",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"962": {
+"name": "角的基础知识",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"963": {
+"name": "认、读、写数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"964": {
+"name": "小数的意义",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"965": {
+"name": "小数的读写",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 5
+},
+"966": {
+"name": "比较大小",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"967": {
+"name": "小数基础",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"968": {
+"name": "图形基础知识",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"969": {
+"name": "角的认识",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"970": {
+"name": "等式填符号",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"971": {
+"name": "简单拆分",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"972": {
+"name": "组合",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"973": {
+"name": "插板法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"974": {
+"name": "加法原理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"975": {
+"name": "数学趣题",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"976": {
+"name": "火柴棒问题",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"977": {
+"name": "乘法运算律",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"978": {
+"name": "混合运算",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"979": {
+"name": "年龄问题之当当型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"980": {
+"name": "盈亏转化题型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"981": {
+"name": "排列",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"982": {
+"name": "定义新运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"983": {
+"name": "直接运算型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"984": {
+"name": "观察规律型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"985": {
+"name": "高斯记号",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"986": {
+"name": "找规律",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"987": {
+"name": "棋盘中的染色",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"988": {
+"name": "体育比赛",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"989": {
+"name": "鸡兔同笼应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"990": {
+"name": "平均速度",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"991": {
+"name": "几何模型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"992": {
+"name": "一半模型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"993": {
+"name": "多位数计算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"994": {
+"name": "地点上的统筹",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"995": {
+"name": "火车问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"996": {
+"name": "火车与人",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"997": {
+"name": "多人相遇与追及问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"998": {
+"name": "能力",
+"module": "能力",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"999": {
+"name": "肯肯数独",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1000": {
+"name": "工程应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1001": {
+"name": "组数问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1002": {
+"name": "付钱的方法",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1003": {
+"name": "比较与估算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1004": {
+"name": "比较大小综合",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1005": {
+"name": "分数通分法",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1006": {
+"name": "数的运算",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"1007": {
+"name": "整数乘法运算律",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1008": {
+"name": "和差倍应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1009": {
+"name": "数阵图",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1010": {
+"name": "平均数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1011": {
+"name": "整数减法运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1012": {
+"name": "位值原理与进制",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1013": {
+"name": "数与数字",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1014": {
+"name": "列方程解应用题等量代换",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1015": {
+"name": "等式字母与数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1016": {
+"name": "学习能力",
+"module": "学习能力",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"1017": {
+"name": "估算与简单应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1018": {
+"name": "数学思想",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1019": {
+"name": "数形结合",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1020": {
+"name": "图形认知三角形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1021": {
+"name": "组合图形周长",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1022": {
+"name": "长方形面积",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1023": {
+"name": "因数与倍数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1024": {
+"name": "角的度数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1025": {
+"name": "根据所给条件计算目标角的角度",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1026": {
+"name": "元、角、分",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1027": {
+"name": "整数加法运算律",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1028": {
+"name": "整数的加减法",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1029": {
+"name": "100以内数的加减法",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1030": {
+"name": "公因数与公倍数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1031": {
+"name": "公因数与最大公因数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1032": {
+"name": "线的认识",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1033": {
+"name": "点线排布",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1034": {
+"name": "倍数问题应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1035": {
+"name": "几何应用",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1036": {
+"name": "图形与变换",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1037": {
+"name": "变形方阵",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1038": {
+"name": "优化",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1039": {
+"name": "解决问题策略",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1040": {
+"name": "生活实践",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1041": {
+"name": "设计方案",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1042": {
+"name": "抽屉原理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1043": {
+"name": "数与形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1044": {
+"name": "因倍应用题",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1045": {
+"name": "比例解行程问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1046": {
+"name": "比例应用题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1047": {
+"name": "分百应用题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1048": {
+"name": "等比数列",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1049": {
+"name": "鸡兔同笼",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1050": {
+"name": "整除性质的应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1051": {
+"name": "乘法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1052": {
+"name": "整数乘法",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1053": {
+"name": "总价应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1054": {
+"name": "三角形基本问题",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1055": {
+"name": "还原应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1056": {
+"name": "思想",
+"module": "思想",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"1057": {
+"name": "杀手数独",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1058": {
+"name": "数字可合并型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1059": {
+"name": "几何定理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1060": {
+"name": "勾股定理与弦图",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1061": {
+"name": "乘方",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1062": {
+"name": "乘方的运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1063": {
+"name": "认识万以内的数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1064": {
+"name": "简单的周期",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1065": {
+"name": "分数的认识",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1066": {
+"name": "小数加减巧算之凑整法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1067": {
+"name": "时钟问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1068": {
+"name": "时钟上的追及问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1069": {
+"name": "公式类运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1070": {
+"name": "平方差公式",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1071": {
+"name": "表内除法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1072": {
+"name": "用乘法口诀求商",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1073": {
+"name": "两位数乘两位数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1074": {
+"name": "多位数乘一位数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1075": {
+"name": "认识正方形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1076": {
+"name": "分数百分数应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1077": {
+"name": "分数的基本性质",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1078": {
+"name": "加法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1079": {
+"name": "分数加法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1080": {
+"name": "用真分数表示图中的面积",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 5
+},
+"1081": {
+"name": "其它数阵图",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1082": {
+"name": "变形数独",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1083": {
+"name": "20以内数的加减法",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1084": {
+"name": "直线型一端有一端没有",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1085": {
+"name": "游戏策略",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1086": {
+"name": "数据分类",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1087": {
+"name": "平面图形周长面积应用",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1088": {
+"name": "线",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1089": {
+"name": "线段基本问题",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1090": {
+"name": "认识千以内的数",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1091": {
+"name": "锯木头问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1092": {
+"name": "等高模型正用",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 5
+},
+"1093": {
+"name": "认识多边形",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1094": {
+"name": "近似数实际运用",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1095": {
+"name": "多量鸡兔同笼",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1096": {
+"name": "除数是两位数的除法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1097": {
+"name": "分解质因数",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1098": {
+"name": "分解质因数的应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1099": {
+"name": "添线、删线法",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1100": {
+"name": "三角形面积公式",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1101": {
+"name": "裂项与通项归纳",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1102": {
+"name": "分数裂项",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1103": {
+"name": "组合模块最值问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1104": {
+"name": "和一定型最值问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1105": {
+"name": "多数之积的最值",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1106": {
+"name": "概率",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1107": {
+"name": "典型问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1108": {
+"name": "工程问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1109": {
+"name": "同增同减应用题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1110": {
+"name": "多边形的面积",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1111": {
+"name": "应用题模块排队问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1112": {
+"name": "集合",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1113": {
+"name": "列方程解用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1114": {
+"name": "简单工程问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1115": {
+"name": "重叠问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1116": {
+"name": "火车与火车",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1117": {
+"name": "多次相遇和追及",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1118": {
+"name": "图形周长综合运用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1119": {
+"name": "小数的简单实际问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1120": {
+"name": "余数的性质",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1121": {
+"name": "四边形之间的关系与区别",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1122": {
+"name": "抢占制胜点",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1123": {
+"name": "平均数应用题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1124": {
+"name": "整数加减运算",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1125": {
+"name": "横式数字谜",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1126": {
+"name": "表内乘法",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1127": {
+"name": "乘法口诀",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1128": {
+"name": "三位数除以一位数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1129": {
+"name": "两位数除以一位数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1130": {
+"name": "分数裂差",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1131": {
+"name": "尾数特征",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1132": {
+"name": "等积变形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1133": {
+"name": "曲线型",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1134": {
+"name": "圆与扇形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1135": {
+"name": "估算",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1136": {
+"name": "有趣的图形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1137": {
+"name": "时间问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1138": {
+"name": "减法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1139": {
+"name": "整数减法",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1140": {
+"name": "公式记忆",
+"module": "能力",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"1141": {
+"name": "长度",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1142": {
+"name": "认识图形观察物体",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1143": {
+"name": "方向与坐标",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1144": {
+"name": "毕克定理",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1145": {
+"name": "钟表",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1146": {
+"name": "字母规律",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1147": {
+"name": "平行四边形的性质及应用",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1148": {
+"name": "题型",
+"module": "题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 0
+},
+"1149": {
+"name": "平行四边形问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1150": {
+"name": "不定方程",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1151": {
+"name": "进制的性质与应用",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1152": {
+"name": "分数巧算",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1153": {
+"name": "繁分数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1154": {
+"name": "认识线",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1155": {
+"name": "量角器",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1156": {
+"name": "图形与位置",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1157": {
+"name": "图形的平移",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1158": {
+"name": "合作工程问题",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1159": {
+"name": "立体图形",
+"module": "拓展思维",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1160": {
+"name": "小数提取公因数",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1161": {
+"name": "空间想象",
+"module": "能力",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"1162": {
+"name": "分小互化",
+"module": "课内知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1163": {
+"name": "特殊平行四边形",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1164": {
+"name": "菱形",
+"module": "课内题型",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1165": {
+"name": "图形的运动与位置",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"1166": {
+"name": "东北、东南、西北、西南",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1167": {
+"name": "笔算乘法：多位数乘一位数（连续进位）",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1168": {
+"name": "三位数乘一位数（三位数中间或末尾有0）",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 4
+},
+"1169": {
+"name": "运算结果估算",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1170": {
+"name": "方程与不等式",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 1
+},
+"1171": {
+"name": "一元二次方程",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 2
+},
+"1172": {
+"name": "一元二次方程的基础",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1173": {
+"name": "上楼梯问题",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+},
+"1174": {
+"name": "求不规则图形周长",
+"module": "知识点",
+"n_questions": 0,
+"is_leaf": false,
+"depth": 3
+}
+}

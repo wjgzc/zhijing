@@ -1,11 +1,14 @@
 import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import { queueWidgetLaunch } from '../widget/WidgetLaunch';
+import { StudyWidgetSync } from '../widget/StudyWidgetSync';
 
 const DOMAIN = 0x0000;
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    queueWidgetLaunch(want.parameters);
     try {
       this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);
     } catch (err) {
@@ -16,6 +19,10 @@ export default class EntryAbility extends UIAbility {
 
   onDestroy(): void {
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onDestroy');
+  }
+
+  onNewWant(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    queueWidgetLaunch(want.parameters);
   }
 
   onWindowStageCreate(windowStage: window.WindowStage): void {
@@ -37,6 +44,7 @@ export default class EntryAbility extends UIAbility {
   }
 
   onForeground(): void {
+    StudyWidgetSync.publish(true);
     // Ability has brought to foreground
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onForeground');
   }

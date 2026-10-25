@@ -1,0 +1,386 @@
+{
+  "0": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "1": {
+    "module": "线性表",
+    "n_questions": 0
+  },
+  "2": {
+    "module": "栈与队列",
+    "n_questions": 0
+  },
+  "3": {
+    "module": "串",
+    "n_questions": 0
+  },
+  "4": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "5": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "6": {
+    "module": "查找",
+    "n_questions": 0
+  },
+  "7": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "8": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "9": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "10": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "11": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "12": {
+    "module": "绪论",
+    "n_questions": 3
+  },
+  "13": {
+    "module": "绪论",
+    "n_questions": 0
+  },
+  "14": {
+    "module": "线性表",
+    "n_questions": 5
+  },
+  "15": {
+    "module": "线性表",
+    "n_questions": 5
+  },
+  "16": {
+    "module": "线性表",
+    "n_questions": 1
+  },
+  "17": {
+    "module": "线性表",
+    "n_questions": 3
+  },
+  "18": {
+    "module": "线性表",
+    "n_questions": 5
+  },
+  "19": {
+    "module": "线性表",
+    "n_questions": 0
+  },
+  "20": {
+    "module": "线性表",
+    "n_questions": 0
+  },
+  "21": {
+    "module": "线性表",
+    "n_questions": 0
+  },
+  "22": {
+    "module": "栈与队列",
+    "n_questions": 8
+  },
+  "23": {
+    "module": "栈与队列",
+    "n_questions": 8
+  },
+  "24": {
+    "module": "栈与队列",
+    "n_questions": 4
+  },
+  "25": {
+    "module": "栈与队列",
+    "n_questions": 1
+  },
+  "26": {
+    "module": "栈与队列",
+    "n_questions": 2
+  },
+  "27": {
+    "module": "栈与队列",
+    "n_questions": 16
+  },
+  "28": {
+    "module": "栈与队列",
+    "n_questions": 2
+  },
+  "29": {
+    "module": "栈与队列",
+    "n_questions": 1
+  },
+  "30": {
+    "module": "栈与队列",
+    "n_questions": 1
+  },
+  "31": {
+    "module": "栈与队列",
+    "n_questions": 0
+  },
+  "32": {
+    "module": "串",
+    "n_questions": 2
+  },
+  "33": {
+    "module": "串",
+    "n_questions": 0
+  },
+  "34": {
+    "module": "串",
+    "n_questions": 0
+  },
+  "35": {
+    "module": "串",
+    "n_questions": 0
+  },
+  "36": {
+    "module": "树与二叉树",
+    "n_questions": 7
+  },
+  "37": {
+    "module": "树与二叉树",
+    "n_questions": 1
+  },
+  "38": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "39": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "40": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "41": {
+    "module": "树与二叉树",
+    "n_questions": 6
+  },
+  "42": {
+    "module": "树与二叉树",
+    "n_questions": 1
+  },
+  "43": {
+    "module": "树与二叉树",
+    "n_questions": 1
+  },
+  "44": {
+    "module": "树与二叉树",
+    "n_questions": 2
+  },
+  "45": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "46": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "47": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "48": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "49": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "50": {
+    "module": "树与二叉树",
+    "n_questions": 0
+  },
+  "51": {
+    "module": "树与二叉树",
+    "n_questions": 2
+  },
+  "52": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "53": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "54": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "55": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "56": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "57": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "58": {
+    "module": "图",
+    "n_questions": 1
+  },
+  "59": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "60": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "61": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "62": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "63": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "64": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "65": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "66": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "67": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "68": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "69": {
+    "module": "图",
+    "n_questions": 0
+  },
+  "70": {
+    "module": "查找",
+    "n_questions": 0
+  },
+  "71": {
+    "module": "查找",
+    "n_questions": 10
+  },
+  "72": {
+    "module": "查找",
+    "n_questions": 2
+  },
+  "73": {
+    "module": "查找",
+    "n_questions": 0
+  },
+  "74": {
+    "module": "查找",
+    "n_questions": 14
+  },
+  "75": {
+    "module": "查找",
+    "n_questions": 1
+  },
+  "76": {
+    "module": "查找",
+    "n_questions": 3
+  },
+  "77": {
+    "module": "查找",
+    "n_questions": 1
+  },
+  "78": {
+    "module": "查找",
+    "n_questions": 0
+  },
+  "79": {
+    "module": "查找",
+    "n_questions": 0
+  },
+  "80": {
+    "module": "查找",
+    "n_questions": 13
+  },
+  "81": {
+    "module": "查找",
+    "n_questions": 3
+  },
+  "82": {
+    "module": "排序",
+    "n_questions": 3
+  },
+  "83": {
+    "module": "排序",
+    "n_questions": 7
+  },
+  "84": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "85": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "86": {
+    "module": "排序",
+    "n_questions": 1
+  },
+  "87": {
+    "module": "排序",
+    "n_questions": 1
+  },
+  "88": {
+    "module": "排序",
+    "n_questions": 9
+  },
+  "89": {
+    "module": "排序",
+    "n_questions": 6
+  },
+  "90": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "91": {
+    "module": "排序",
+    "n_questions": 1
+  },
+  "92": {
+    "module": "排序",
+    "n_questions": 4
+  },
+  "93": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "94": {
+    "module": "排序",
+    "n_questions": 0
+  },
+  "95": {
+    "module": "排序",
+    "n_questions": 0
+  }
+}

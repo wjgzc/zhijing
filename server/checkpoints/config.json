@@ -1,0 +1,10 @@
+{
+  "n_kc": 865,
+  "hidden": 200,
+  "emb": 100,
+  "dropout": 0.2,
+  "test_auc": 0.834468217636973,
+  "best_val_auc": 0.8341717343162329,
+  "lambda_pre": 1.0,
+  "seed": 42
+}

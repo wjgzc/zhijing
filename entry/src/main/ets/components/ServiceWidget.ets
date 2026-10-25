@@ -1,11 +1,25 @@
-import { switchTab } from '../utils/TabSwitch';
+import { switchTab, openPractice } from '../utils/TabSwitch';
+import { AppState } from '../model/AppState';
+
+interface StudyTask {
+  kc: number;
+  name: string;
+  done: boolean;
+}
+
+interface StatWidgetParams {
+  value: string;
+  label: string;
+}
 
 @Component
 export struct ServiceWidget {
-  // 原有状态
-  @State task1Done: boolean = true;
-  @State task2Done: boolean = false;
-  @State task3Done: boolean = false;
+  @State tasks: StudyTask[] = [];
+  @State questionCount: number = 0;
+  @State overallMastery: number = 0;
+  @State hasMastery: boolean = false;
+  @State doneTaskCount: number = 0;
+  @StorageProp('appStateVersion') @Watch('refresh') stateVersion: number = 0;
 
   // 用户信息状态
   @State username: string = '张三';
@@ -21,13 +35,37 @@ export struct ServiceWidget {
   @State editIdentity: string = '';
 
   // 头像颜色列表（6个备选）
-  private avatarColors: string[] = [
-    '#4A90D9', '#E85D75', '#5CB85C', '#F0AD4E', '#9B59B6', '#1ABC9C'
+  private avatarColors: ResourceColor[] = [
+    $r('app.color.brand_solid'), '#BF3443', '#257449', '#946000', '#7850AA', '#087D79'
   ];
   // 头像对应首字母
   private avatarInitials: string[] = [
     '张', '李', '王', '赵', '孙', '周'
   ];
+
+  aboutToAppear(): void {
+    this.refresh();
+  }
+
+  private refresh(): void {
+    const overview = AppState.getOverview();
+    this.questionCount = overview.questionCount;
+    this.overallMastery = overview.overallMastery;
+    this.hasMastery = overview.hasMastery;
+    this.doneTaskCount = overview.doneTaskCount;
+    const tasks: StudyTask[] = [];
+    for (const item of AppState.getPlan()) {
+      tasks.push({ kc: item.kc, name: item.name, done: AppState.isDone(item.kc) });
+    }
+    this.tasks = tasks;
+  }
+
+  private focusGraph(kc: number): void {
+    AppStorage.setOrCreate('focusKcId', kc);
+    const seq = (AppStorage.get<number>('focusSeq') ?? 0) + 1;
+    AppStorage.setOrCreate('focusSeq', seq);
+    switchTab(1);
+  }
 
   build() {
     Stack() {
@@ -71,33 +109,38 @@ export struct ServiceWidget {
             this.WidgetLarge()
           }
 
-          Blank().height(100)
+          Blank().height(24)
         }
         .width('100%')
         .alignItems(HorizontalAlign.Center)
       }
       .width('100%')
       .height('100%')
-      .backgroundColor('#F5F5F5')
+      .backgroundColor($r('app.color.page_background'))
       .scrollBar(BarState.Off)
 
-    // 修改信息弹窗
-    if (this.showEditDialog) {
-      this.EditProfileDialog()
     }
-
-    // 头像选择弹窗
-    if (this.showAvatarDialog) {
-      this.AvatarPickerDialog()
-    }
-    }
+    .bindSheet($$this.showEditDialog, this.EditProfileDialog(), {
+      height: SheetSize.FIT_CONTENT,
+      showClose: true,
+      dragBar: true,
+      title: { title: '修改个人信息' },
+      backgroundColor: $r('app.color.surface')
+    })
+    .bindSheet($$this.showAvatarDialog, this.AvatarPickerDialog(), {
+      height: SheetSize.FIT_CONTENT,
+      showClose: true,
+      dragBar: true,
+      title: { title: '选择头像' },
+      backgroundColor: $r('app.color.surface')
+    })
   }
 
   // ======================== 页面头部 ========================
   @Builder
   PageHeader() {
     Column() {
-      Text('服务卡片')
+      Text('我的')
         .fontSize(24)
         .fontWeight(FontWeight.Bold)
         .fontColor(Color.White)
@@ -191,38 +234,20 @@ export struct ServiceWidget {
   // ======================== 修改信息弹窗 ========================
   @Builder
   EditProfileDialog() {
-    Stack() {
-      // 半透明遮罩（点击关闭）
-      Column()
-        .width('100%')
-        .height('100%')
-        .backgroundColor('rgba(0,0,0,0.5)')
-        .onClick(() => {
-          this.showEditDialog = false;
-        })
-
-      // 弹窗内容（阻止冒泡）
       Column() {
-        Text('修改个人信息')
-          .fontSize(18)
-          .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
-          .width('100%')
-          .textAlign(TextAlign.Center)
-          .margin({ bottom: 20 })
 
         // 用户名输入 —— 显示原值为 placeholder，文本初始为空
         Column() {
           Text('用户名')
             .fontSize(13)
-            .fontColor('#888')
+            .fontColor($r('app.color.text_secondary'))
             .margin({ bottom: 6 })
             .width('100%')
 
           TextInput({ placeholder: `当前：${this.username}` })
             .fontSize(14)
-            .placeholderColor('#A0A0A0')
-            .backgroundColor('#F8F8F8')
+            .placeholderColor($r('app.color.text_placeholder'))
+            .backgroundColor($r('app.color.surface_subtle'))
             .borderRadius(8)
             .height(42)
             .padding({ left: 12, right: 12 })
@@ -238,14 +263,14 @@ export struct ServiceWidget {
         Column() {
           Text('身份信息')
             .fontSize(13)
-            .fontColor('#888')
+            .fontColor($r('app.color.text_secondary'))
             .margin({ bottom: 6 })
             .width('100%')
 
           TextInput({ placeholder: `当前：${this.identity}` })
             .fontSize(14)
-            .placeholderColor('#A0A0A0')
-            .backgroundColor('#F8F8F8')
+            .placeholderColor($r('app.color.text_placeholder'))
+            .backgroundColor($r('app.color.surface_subtle'))
             .borderRadius(8)
             .height(42)
             .padding({ left: 12, right: 12 })
@@ -261,7 +286,7 @@ export struct ServiceWidget {
         Column() {
           Text('年级')
             .fontSize(13)
-            .fontColor('#888')
+            .fontColor($r('app.color.text_secondary'))
             .margin({ bottom: 6 })
             .width('100%')
 
@@ -269,8 +294,8 @@ export struct ServiceWidget {
             ForEach(this.getAllGrades(), (gradeItem: string) => {
               Text(gradeItem)
                 .fontSize(13)
-                .fontColor(this.editGrade === gradeItem ? Color.White : '#555')
-                .backgroundColor(this.editGrade === gradeItem ? '#3B7DD8' : '#F0F0F0')
+                .fontColor(this.editGrade === gradeItem ? Color.White : $r('app.color.text_primary'))
+                .backgroundColor(this.editGrade === gradeItem ? '#3B7DD8' : $r('app.color.surface_subtle'))
                 .borderRadius(14)
                 .padding({ left: 12, right: 12, top: 6, bottom: 6 })
                 .margin({ right: 8, bottom: 8 })
@@ -288,8 +313,8 @@ export struct ServiceWidget {
         Row() {
           Button('取消')
             .fontSize(14)
-            .fontColor('#888')
-            .backgroundColor('#F0F0F0')
+            .fontColor($r('app.color.text_secondary'))
+            .backgroundColor($r('app.color.surface_subtle'))
             .borderRadius(20)
             .height(40)
             .layoutWeight(1)
@@ -324,46 +349,14 @@ export struct ServiceWidget {
         .width('100%')
         .margin({ top: 10 })
       }
-      .width('88%')
-      .backgroundColor(Color.White)
-      .borderRadius(16)
-      .padding(24)
-      .shadow({
-        radius: 16,
-        color: '#40000000',
-        offsetX: 0,
-        offsetY: 8
-      })
-      .onClick(() => {
-        // 阻止事件冒泡到遮罩
-      })
-    }
-    .width('100%')
-    .height('100%')
+      .width('100%')
+      .padding({ left: 24, right: 24, top: 8, bottom: 24 })
   }
 
   // ======================== 头像选择弹窗 ========================
   @Builder
   AvatarPickerDialog() {
-    Stack() {
-      // 半透明遮罩（点击关闭）
-      Column()
-        .width('100%')
-        .height('100%')
-        .backgroundColor('rgba(0,0,0,0.5)')
-        .onClick(() => {
-          this.showAvatarDialog = false;
-        })
-
-      // 弹窗内容（阻止冒泡）
       Column() {
-        Text('选择头像')
-          .fontSize(18)
-          .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
-          .width('100%')
-          .textAlign(TextAlign.Center)
-          .margin({ bottom: 20 })
 
         // 头像网格（3列2行 = 6个备选头像）
         Grid() {
@@ -390,7 +383,7 @@ export struct ServiceWidget {
 
                 Text(this.avatarInitials[index])
                   .fontSize(11)
-                  .fontColor('#888')
+                  .fontColor($r('app.color.text_secondary'))
                   .margin({ top: 6 })
               }
               .alignItems(HorizontalAlign.Center)
@@ -419,22 +412,8 @@ export struct ServiceWidget {
             this.showAvatarDialog = false;
           })
       }
-      .width('82%')
-      .backgroundColor(Color.White)
-      .borderRadius(16)
-      .padding(24)
-      .shadow({
-        radius: 16,
-        color: '#40000000',
-        offsetX: 0,
-        offsetY: 8
-      })
-      .onClick(() => {
-        // 阻止事件冒泡到遮罩
-      })
-    }
-    .width('100%')
-    .height('100%')
+      .width('100%')
+      .padding({ left: 24, right: 24, top: 8, bottom: 24 })
   }
 
   // ======================== 年级列表 ========================
@@ -447,7 +426,7 @@ export struct ServiceWidget {
   WidgetSmall() {
     Column() {
 
-      Text('知径Agent')
+      Text('知径学习助手')
         .fontSize(15)
         .fontWeight(FontWeight.Bold)
         .fontColor(Color.White)
@@ -461,7 +440,7 @@ export struct ServiceWidget {
     .padding(10)
     .linearGradient({
       angle: 135,
-      colors: [['#4A90D9', 0], ['#6BA8E8', 1]]
+      colors: [[$r('app.color.brand_solid'), 0], [$r('app.color.brand_end'), 1]]
     })
     .borderRadius(24)
     .justifyContent(FlexAlign.SpaceBetween)
@@ -483,39 +462,44 @@ export struct ServiceWidget {
     Column() {
       Row() {
 
-        Text('今日学习任务')
+        Text('当前学习任务')
           .fontSize(20)
           .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
+          .fontColor($r('app.color.text_primary'))
+        Blank()
+        Text('查看路径 →')
+          .fontSize(12)
+          .fontColor($r('app.color.brand'))
+          .onClick(() => switchTab(3))
       }
       .width('100%')
       .margin({ bottom: 12 })
 
       Column() {
-        Column() {
-          this.TaskItem('数组复习（已完成）', this.task1Done)
+        if (this.tasks.length === 0) {
+          Text('暂无正在进行的任务，去学习助手 接受新的学习路径')
+            .fontSize(13)
+            .fontColor($r('app.color.text_secondary'))
+            .lineHeight(20)
+            .width('100%')
+            .padding({ top: 8, bottom: 8 })
+            .onClick(() => switchTab(2))
+        } else {
+          Text(`已完成 ${this.doneTaskCount} / ${this.tasks.length} 个任务`)
+            .fontSize(12)
+            .fontColor($r('app.color.text_secondary'))
+            .width('100%')
+            .margin({ bottom: 12 })
+          ForEach(this.tasks, (task: StudyTask) => {
+            this.TaskItem(task)
+          }, (task: StudyTask) => task.kc.toString() + '_' + task.done.toString())
         }
-        .width('100%')
-        .onClick(() => { this.task1Done = !this.task1Done })
-
-        Column() {
-          this.TaskItem('链表插入操作练习', this.task2Done)
-        }
-        .width('100%')
-        .onClick(() => { this.task2Done = !this.task2Done })
-
-        Column() {
-          this.TaskItem('链表删除操作练习', this.task3Done)
-        }
-        .width('100%')
-        .onClick(() => { this.task3Done = !this.task3Done })
       }
       .width('100%')
     }
-    .width(335)
-    .height(160)
+    .width('90%')
     .padding(20)
-    .backgroundColor(Color.White)
+    .backgroundColor($r('app.color.surface'))
     .borderRadius(24)
     .shadow({
       radius: 12,
@@ -526,35 +510,55 @@ export struct ServiceWidget {
   }
 
   @Builder
-  TaskItem(text: string, done: boolean) {
+  TaskItem(task: StudyTask) {
     Row() {
-      Stack() {
-        if (done) {
-          Circle()
-            .width(20)
-            .height(20)
-            .fill('#7ED321')
-          Text('✓')
-            .fontSize(12)
-            .fontColor(Color.White)
-        } else {
-          Circle()
-            .width(20)
-            .height(20)
-            .fill(Color.White)
-            .stroke('#E8E8E8')
-            .strokeWidth(2)
+      Row() {
+        Stack() {
+          if (task.done) {
+            Circle()
+              .width(20)
+              .height(20)
+              .fill($r('app.color.success'))
+            Text('✓')
+              .fontSize(12)
+              .fontColor(Color.White)
+          } else {
+            Circle()
+              .width(20)
+              .height(20)
+              .fill($r('app.color.surface'))
+              .stroke($r('app.color.divider'))
+              .strokeWidth(2)
+          }
         }
-      }
-      .width(20)
-      .height(20)
-      .margin({ right: 10 })
+        .width(20)
+        .height(20)
+        .margin({ right: 10 })
 
-      Text(text)
-        .fontSize(13)
-        .fontColor(done ? '#8E92A4' : '#1A1A2E')
-        .decoration({ type: done ? TextDecorationType.LineThrough : TextDecorationType.None })
-        .layoutWeight(1)
+        Text(task.name)
+          .fontSize(13)
+          .fontColor(task.done ? $r('app.color.text_secondary') : $r('app.color.text_primary'))
+          .decoration({ type: task.done ? TextDecorationType.LineThrough : TextDecorationType.None })
+          .layoutWeight(1)
+      }
+      .layoutWeight(1)
+      .padding({ top: 8, bottom: 8 })
+      .onClick(() => this.focusGraph(task.kc))
+
+      if (!task.done) {
+        Button('去做题')
+          .fontSize(12)
+          .fontColor(Color.White)
+          .backgroundColor($r('app.color.brand_solid'))
+          .height(32)
+          .margin({ left: 10 })
+          .onClick(() => openPractice(task.kc))
+      } else {
+        Text('已完成任务')
+          .fontSize(12)
+          .fontColor($r('app.color.success'))
+          .margin({ left: 10 })
+      }
     }
     .width('100%')
     .margin({ bottom: 8 })
@@ -569,22 +573,22 @@ export struct ServiceWidget {
         Text('学习进度看板')
           .fontSize(20)
           .fontWeight(FontWeight.Bold)
-          .fontColor('#1A1A2E')
+          .fontColor($r('app.color.text_primary'))
       }
       .width('100%')
       .margin({ bottom: 12 })
 
       Row() {
-        this.StatWidget('68%', '掌握度')
-        this.StatWidget('12', '连续天')
-        this.StatWidget('3', '今日任务')
+        this.StatWidget({ value: this.hasMastery ? this.overallMastery + '%' : '待诊断', label: AppState.isDsa() ? '预测答对率' : '综合掌握度' })
+        this.StatWidget({ value: this.questionCount.toString(), label: '已做题目' })
+        this.StatWidget({ value: (this.tasks.length - this.doneTaskCount).toString(), label: '待完成任务' })
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
       .margin({ bottom: 16 })
 
       Row() {
-        Button('问Agent')
+        Button('问学习助手')
           .fontSize(13)
           .fontWeight(FontWeight.Medium)
           .layoutWeight(1)
@@ -592,7 +596,7 @@ export struct ServiceWidget {
           .borderRadius(12)
           .linearGradient({
             angle: 135,
-            colors: [['#4A90D9', 0], ['#6BA8E8', 1]]
+            colors: [[$r('app.color.brand_solid'), 0], [$r('app.color.brand_end'), 1]]
           })
           .fontColor(Color.White)
           .onClick(() => {
@@ -605,8 +609,8 @@ export struct ServiceWidget {
           .layoutWeight(1)
           .height(40)
           .borderRadius(12)
-          .backgroundColor('#F0F4F8')
-          .fontColor('#4A90D9')
+          .backgroundColor($r('app.color.surface_subtle'))
+          .fontColor($r('app.color.brand'))
           .margin({ left: 10 })
           .onClick(() => {
             switchTab(3)
@@ -614,10 +618,9 @@ export struct ServiceWidget {
       }
       .width('100%')
     }
-    .width(335)
-    .height(200)
+    .width('90%')
     .padding(20)
-    .backgroundColor(Color.White)
+    .backgroundColor($r('app.color.surface'))
     .borderRadius(24)
     .shadow({
       radius: 12,
@@ -628,21 +631,21 @@ export struct ServiceWidget {
   }
 
   @Builder
-  StatWidget(value: string, label: string) {
+  StatWidget(params: StatWidgetParams) {
     Column() {
-      Text(value)
-        .fontSize(24)
+      Text(params.value)
+        .fontSize(params.value === '待诊断' ? 16 : 24)
         .fontWeight(FontWeight.Bold)
-        .fontColor('#4A90D9')
+        .fontColor($r('app.color.brand'))
 
-      Text(label)
+      Text(params.label)
         .fontSize(11)
-        .fontColor('#8E92A4')
+        .fontColor($r('app.color.text_secondary'))
         .margin({ top: 4 })
     }
-    .width('30%')
-    .padding(12)
-    .backgroundColor('#F7F9FC')
+    .width('32%')
+    .padding({ left: 6, right: 6, top: 12, bottom: 12 })
+    .backgroundColor($r('app.color.surface_subtle'))
     .borderRadius(16)
   }
 }

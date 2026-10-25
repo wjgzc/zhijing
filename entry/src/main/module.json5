@@ -26,11 +26,12 @@
     "abilities": [
       {
         "name": "EntryAbility",
+        "launchType": "singleton",
         "srcEntry": "./ets/entryability/EntryAbility.ets",
         "description": "$string:EntryAbility_desc",
         "icon": "$media:layered_image",
         "label": "$string:EntryAbility_label",
-        "startWindowIcon": "$media:startIcon",
+        "startWindowIcon": "$media:zhijing_start",
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
         "skills": [
@@ -46,6 +47,20 @@
       }
     ],
     "extensionAbilities": [
+      {
+        "name": "StudyFormAbility",
+        "exported": true,
+        "srcEntry": "./ets/entryformability/StudyFormAbility.ets",
+        "label": "$string:study_widget_name",
+        "description": "$string:study_widget_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      },
       {
         "name": "EntryBackupAbility",
         "srcEntry": "./ets/entrybackupability/EntryBackupAbility.ets",
