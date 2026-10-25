@@ -40,7 +40,6 @@ async function main() {
     }, null, 2) + '\n');
   }
   await png(combined, 288, path.join(root, 'entry/src/main/resources/base/media/zhijing_start.png'));
-  await png(combined, 1024, path.join(design, 'zhijing.png'));
   // This is an unmasked source. The system applies the launcher shape.
   console.log('Generated 知径 layered launcher, startup mark, and editable SVG source.');
 }
