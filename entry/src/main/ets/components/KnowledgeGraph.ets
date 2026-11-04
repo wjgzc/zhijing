@@ -1,3 +1,4 @@
+import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { util } from '@kit.ArkTS';
 import { common } from '@kit.AbilityKit';
 import { promptAction } from '@kit.ArkUI';
@@ -122,6 +123,7 @@ function wrapName(name: string): string[] {
 // ============================================================================
 @Component
 export struct KnowledgeGraph {
+  @StorageProp('contentWidth') contentWidth: number = 0;
   private settings: RenderingContextSettings = new RenderingContextSettings(true);
   private ctx: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
 
@@ -1055,8 +1057,15 @@ export struct KnowledgeGraph {
     Stack() {
       Column() {
         this.PageHeader()
-        this.GraphArea()
-        this.DetailPanel()
+        Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column,
+          alignItems: ItemAlign.Center }) {
+          this.GraphArea()
+          Scroll() {
+            this.DetailPanel()
+          }.width(AdaptiveLayout.split(this.contentWidth) ? 300 : '100%')
+            .constraintSize({ maxHeight: AdaptiveLayout.split(this.contentWidth) ? '100%' : '38%' })
+            .flexShrink(0).scrollBar(BarState.Auto)
+        }.width('100%').layoutWeight(1)
       }
       .width('100%')
       .height('100%')
@@ -1101,6 +1110,16 @@ export struct KnowledgeGraph {
       .alignItems(HorizontalAlign.Start)
 
       Blank()
+      if (this.contentWidth >= 600) {
+        Row({ space: 6 }) {
+          Button('−').width(40).height(40).accessibilityText('缩小图谱')
+            .onClick(() => { this.zoomAt(this.canvasW / 2, this.canvasH / 2, 0.8); })
+          Button('+').width(40).height(40).accessibilityText('放大图谱')
+            .onClick(() => { this.zoomAt(this.canvasW / 2, this.canvasH / 2, 1.25); })
+          Button('居中').height(40)
+            .onClick(() => { this.fitToView(); this.draw(); })
+        }
+      }
     }
     .width('90%')
     .height(60)
@@ -1113,6 +1132,11 @@ export struct KnowledgeGraph {
       Canvas(this.ctx)
         .width('100%')
         .height('100%')
+        .focusable(true)
+        .onAxisEvent((event: AxisEvent) => {
+          const delta = event.getVerticalAxisValue();
+          if (delta !== 0) { this.zoomAt(event.x, event.y, delta > 0 ? 0.9 : 1.1); }
+        })
         .onReady(() => {
           this.canvasReady = true;
           this.tryDraw();
@@ -1176,8 +1200,14 @@ export struct KnowledgeGraph {
     .width('100%')
     .layoutWeight(1)
     .onAreaChange((oldValue: Area, newValue: Area) => {
-      this.canvasW = newValue.width as number;
-      this.canvasH = newValue.height as number;
+      const width = Number(newValue.width);
+      const height = Number(newValue.height);
+      // Preserve the graph's centre and zoom when the window is resized.
+      this.tx += (width - this.canvasW) / 2;
+      this.ty += (height - this.canvasH) / 2;
+      this.canvasW = width;
+      this.canvasH = height;
+      this.applyBounds();
       this.tryDraw();
     })
   }
@@ -1311,10 +1341,11 @@ export struct KnowledgeGraph {
       }
     }
     .width('92%')
+    .constraintSize({ maxWidth: this.curIsJava ? 1200 : 960 })
     .padding(20)
     .backgroundColor($r('app.color.surface'))
     .borderRadius(24)
-    .height('84%')
+.height(this.contentWidth >= 600 ? '94%' : '84%')
     .shadow({
       radius: 20,
       color: '#30000000',
@@ -1333,6 +1364,9 @@ export struct KnowledgeGraph {
           .width('100%')
           .margin({ bottom: 10 })
 
+        Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column,
+          justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Start }) {
+        Column() {
         Text(this.curContent)
           .wordBreak(WordBreak.BREAK_ALL)
           .fontSize(15)
@@ -1368,6 +1402,11 @@ export struct KnowledgeGraph {
             }.width('100%').padding(12).backgroundColor($r('app.color.surface_subtle'))
               .alignItems(HorizontalAlign.Start).margin({ top: 8, bottom: 8 })
           }, (example: QuestionExample, index: number) => index.toString())
+        }
+        }.width(AdaptiveLayout.split(this.contentWidth) ? '46%' : '100%')
+          .alignItems(HorizontalAlign.Start)
+        Column() {
+        if (this.curIsJava) {
           Text('Java 17 · 从标准输入读取，向标准输出打印结果').fontSize(12).fontColor($r('app.color.text_secondary'))
             .width('100%').margin({ top: 12, bottom: 8 })
           Row({ space: 8 }) {
@@ -1380,7 +1419,7 @@ export struct KnowledgeGraph {
               .enabled(!this.judgePending).onClick(() => { this.selectJavaMainClass('Main'); })
           }.width('100%').margin({ bottom: 8 })
           TextArea({ text: this.javaCode, placeholder: '在这里编写或粘贴 Java 代码' })
-            .width('100%').height(260).fontSize(13).fontFamily('monospace').maxLength(60000)
+            .width('100%').height(AdaptiveLayout.split(this.contentWidth) ? 380 : 260).fontSize(13).fontFamily('monospace').maxLength(60000)
             .backgroundColor($r('app.color.surface_subtle')).enabled(!this.judgePending)
             .onChange((value: string) => {
               this.javaCode = value;
@@ -1485,13 +1524,16 @@ export struct KnowledgeGraph {
               this.nextQuestion();
             })
         }
+        }.width(AdaptiveLayout.split(this.contentWidth) ? '50%' : '100%')
+          .alignItems(HorizontalAlign.Start)
+        }.width('100%')
       }
       .width('100%')
       .alignItems(HorizontalAlign.Start)
     }
     .width('100%')
     .layoutWeight(1)
-    .scrollBar(BarState.Off)
+    .scrollBar(BarState.Auto)
   }
 
   // 手势临时状态

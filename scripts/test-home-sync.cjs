@@ -19,7 +19,10 @@ const AppStorage = {
 };
 
 function load(file, globals) {
-  const context = { exports: {}, ...globals };
+  const context = { exports: {}, ...globals, require: name => {
+    if (name.includes('/utils/AdaptiveLayout')) return load(path.join(__dirname, '../entry/src/main/ets/utils/AdaptiveLayout.ets'), {});
+    return globals.require(name);
+  }};
   const code = ts.transpileModule(fs.readFileSync(file, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 }
   }).outputText;
@@ -71,21 +74,20 @@ class ViewPU {
 
 const noopUI = () => new Proxy({}, { get: () => () => {} });
 const ui = {
-  $r: name => name,
   ViewPU,
   ObservedPropertySimplePU: ObservableProperty,
   ObservedPropertyObjectPU: ObservableProperty,
   SynchedPropertySimpleOneWayPU: ObservableProperty,
   AppStorage,
   Column: noopUI(), Row: noopUI(), Stack: noopUI(),
-  ProgressType: { Ring: 0 },
-  Progress: new Proxy({}, { get: (_, name) => name === 'create' ? params => { currentNode.progress = params.value; } : () => {} }),
   Circle: new Proxy({}, {
     get: (_, name) => name === 'strokeDashArray' ? value => { currentNode.arc = value[0]; } : () => {}
   }),
   Text: new Proxy({}, {
     get: (_, name) => name === 'create' ? value => { currentNode.text = String(value); } : () => {}
   }),
+  Progress: new Proxy({}, {get: (_, name) => name === 'create' ? value => { currentNode.progress = value.value; } : () => {}}),
+  ProgressType: { Ring: 0 },
   Color: { White: '#fff' }, FontWeight: { Bold: 700 },
   FlexAlign: { SpaceBetween: 0 }, LineCapStyle: { Round: 0 },
   makeBuilderParameterProxy: (_name, bindings) => new Proxy({}, {

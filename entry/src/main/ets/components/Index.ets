@@ -1,3 +1,4 @@
+import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { AppState } from '../model/AppState';
 import { switchTab } from '../utils/TabSwitch';
 
@@ -16,6 +17,7 @@ interface StatCardParams {
 
 @Component
 export struct Index {
+  @StorageProp('contentWidth') contentWidth: number = 0;
   @Prop @Watch('onActiveChange') isActive: boolean = true;
   @State questionCount: number = 0;
   @State overallMastery: number = 0;
@@ -56,19 +58,27 @@ export struct Index {
   build() {
     Scroll() {
       Column() {
-        this.HeaderSection()
-        this.AgentButton()
-        this.TodayPathSection()
-        this.StatsSection()
+        Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column,
+          alignItems: ItemAlign.Start, justifyContent: FlexAlign.SpaceBetween }) {
+          Column() {
+            this.HeaderSection()
+            this.AgentButton()
+          }.width(AdaptiveLayout.split(this.contentWidth) ? '36%' : '100%')
+          Column() {
+            this.TodayPathSection()
+            this.StatsSection()
+          }.width(AdaptiveLayout.split(this.contentWidth) ? '62%' : '100%')
+        }.width('100%')
         Blank().height(24)
       }
-      .width('100%')
+      .width('100%').constraintSize({ maxWidth: 1440 })
+      .padding({ top: AdaptiveLayout.split(this.contentWidth) ? 32 : 0 })
       .alignItems(HorizontalAlign.Center)
     }
     .width('100%')
     .height('100%')
     .backgroundColor($r('app.color.page_background'))
-    .scrollBar(BarState.Off)
+    .scrollBar(BarState.Auto)
     .edgeEffect(EdgeEffect.Spring)
   }
 
@@ -181,7 +191,7 @@ export struct Index {
         }
         .width('100%')
         .scrollable(ScrollDirection.Horizontal)
-        .scrollBar(BarState.Off)
+        .scrollBar(BarState.Auto)
       }
     }
     .width('90%')

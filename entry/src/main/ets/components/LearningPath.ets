@@ -1,3 +1,4 @@
+import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { AppState, CompletedPlan, WeakKc, TaskQuestion } from '../model/AppState';
 import { switchTab, openPractice, requestReplan } from '../utils/TabSwitch';
 import { PracticeService } from '../services/PracticeService';
@@ -18,6 +19,7 @@ interface PathStage {
 
 @Component
 export struct LearningPath {
+  @StorageProp('contentWidth') contentWidth: number = 0;
   private courseEpoch: number = AppState.getCourseEpoch();
   @State stages: PathStage[] = [];
   @State doneCount: number = 0;
@@ -132,6 +134,9 @@ export struct LearningPath {
   Timeline() {
     Scroll() {
       Column() {
+        Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column,
+          justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Start }) {
+        Column() {
         Text('正在进行')
           .fontSize(18)
           .fontWeight(FontWeight.Bold)
@@ -187,15 +192,21 @@ export struct LearningPath {
             stage.questions.length.toString() + '_' + stage.answeredCount.toString() + '_' +
             stage.loadingFailed.toString())
         }
-        this.CompletedSection()
+        }.width(AdaptiveLayout.split(this.contentWidth) ? '60%' : '100%')
+          .alignItems(HorizontalAlign.Start)
+        Column() {
+          this.CompletedSection()
+        }.width(AdaptiveLayout.split(this.contentWidth) ? '36%' : '100%')
+        }.width('100%')
       }
       .width('100%')
-      .padding({ left: 24, right: 24, top: 8, bottom: 100 })
+      .constraintSize({ maxWidth: 1440 })
+      .padding({ left: 24, right: 24, top: 8, bottom: this.contentWidth >= 600 ? 32 : 100 })
       .alignItems(HorizontalAlign.Start)
     }
     .width('100%')
     .layoutWeight(1)
-    .scrollBar(BarState.Off)
+    .scrollBar(BarState.Auto)
   }
 
   private toggleCompletedPlan(id: number): void {

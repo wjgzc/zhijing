@@ -11,7 +11,10 @@ const PersistentStorage = { persistProp: (key,value) => {
   if (!storage.has(key)) storage.set(key,value);
 }};
 function load(file,globals) {
-  const context = {exports:{},...globals};
+  const context = {exports:{},...globals, require: name => {
+    if (name.includes('/utils/AdaptiveLayout')) return load('entry/src/main/ets/utils/AdaptiveLayout.ets', {});
+    return globals.require(name);
+  }};
   const code = ts.transpileModule(fs.readFileSync(path.join(root,file),'utf8'), {
     compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}
   }).outputText;

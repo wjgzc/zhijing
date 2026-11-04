@@ -1,3 +1,4 @@
+import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { switchTab, openPractice } from '../utils/TabSwitch';
 import { AppState } from '../model/AppState';
 
@@ -14,6 +15,7 @@ interface StatWidgetParams {
 
 @Component
 export struct ServiceWidget {
+  @StorageProp('contentWidth') contentWidth: number = 0;
   @State tasks: StudyTask[] = [];
   @State questionCount: number = 0;
   @State overallMastery: number = 0;
@@ -71,6 +73,9 @@ export struct ServiceWidget {
     Stack() {
       Scroll() {
         Column() {
+          Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column,
+            justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Start }) {
+          Column() {
           // 渐变区域：包含"服务卡片"标题 + 用户信息卡片
           Column() {
             this.PageHeader()
@@ -100,6 +105,8 @@ export struct ServiceWidget {
           }
           .margin({ bottom: 16 })
 
+          }.width(AdaptiveLayout.split(this.contentWidth) ? '36%' : '100%')
+          Column() {
           Column() {
             this.WidgetMedium()
           }
@@ -109,19 +116,23 @@ export struct ServiceWidget {
             this.WidgetLarge()
           }
 
+          }.width(AdaptiveLayout.split(this.contentWidth) ? '62%' : '100%')
+          }.width('100%')
           Blank().height(24)
         }
-        .width('100%')
+        .width('100%').constraintSize({ maxWidth: 1440 })
         .alignItems(HorizontalAlign.Center)
       }
       .width('100%')
       .height('100%')
       .backgroundColor($r('app.color.page_background'))
-      .scrollBar(BarState.Off)
+      .scrollBar(BarState.Auto)
 
     }
     .bindSheet($$this.showEditDialog, this.EditProfileDialog(), {
       height: SheetSize.FIT_CONTENT,
+      preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
+      width: this.contentWidth >= 600 ? 480 : '100%',
       showClose: true,
       dragBar: true,
       title: { title: '修改个人信息' },
@@ -129,6 +140,8 @@ export struct ServiceWidget {
     })
     .bindSheet($$this.showAvatarDialog, this.AvatarPickerDialog(), {
       height: SheetSize.FIT_CONTENT,
+      preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
+      width: this.contentWidth >= 600 ? 480 : '100%',
       showClose: true,
       dragBar: true,
       title: { title: '选择头像' },

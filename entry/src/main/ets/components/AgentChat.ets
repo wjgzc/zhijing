@@ -1,3 +1,4 @@
+import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { promptAction } from '@kit.ArkUI';
 import { switchTab } from '../utils/TabSwitch';
 import { AppState, WeakKc } from '../model/AppState';
@@ -19,6 +20,7 @@ interface UIMessage {
   role: 'agent' | 'user';
   content: string;
   lines: ChatSegment[][];
+  isAiGenerated: boolean;
   isSuggestion: boolean;
   suggestionState: string;
   plan: WeakKc[];
@@ -67,7 +69,7 @@ function parseSegments(content: string): ChatSegment[] {
 }
 
 function toAgentMessage(content: string, isSuggestion: boolean, id: number = 0,
-  plan: WeakKc[] = []): UIMessage {
+  plan: WeakKc[] = [], isAiGenerated: boolean = true): UIMessage {
   content = displayText(content);
   const rawLines = content.split('\n');
   const lineSegs: ChatSegment[][] = [];
@@ -79,6 +81,7 @@ function toAgentMessage(content: string, isSuggestion: boolean, id: number = 0,
     role: 'agent',
     content: content,
     lines: lineSegs,
+    isAiGenerated: isAiGenerated,
     isSuggestion: isSuggestion,
     suggestionState: isSuggestion ? 'pending' : 'none',
     plan: plan.map((item: WeakKc): WeakKc => {
@@ -94,6 +97,7 @@ function withSuggestionState(msg: UIMessage, state: string, planId: number): UIM
     role: msg.role,
     content: msg.content,
     lines: msg.lines,
+    isAiGenerated: msg.isAiGenerated,
     isSuggestion: msg.isSuggestion,
     suggestionState: state,
     plan: msg.plan,
@@ -107,8 +111,9 @@ const TIMES: string[] = ['15分钟', '30分钟', '1小时'];
 
 @Component
 export struct AgentChat {
+  @StorageProp('contentWidth') contentWidth: number = 0;
   @State messages: UIMessage[] = [
-    toAgentMessage('你好！我是知径学习助手 🤖\n先花几秒钟了解一下你的情况，请选择下面三个问题，然后点「开始分析」，我会结合你的做题情况给出学习建议。', false)
+    toAgentMessage('你好！我是知径学习助手 🤖\n先花几秒钟了解一下你的情况，请选择下面三个问题，然后点「开始分析」，我会结合你的做题情况给出学习建议。', false, 0, [], false)
   ];
   @State inputText: string = '';
   @State isLoading: boolean = false;
@@ -131,8 +136,12 @@ export struct AgentChat {
       try {
         const restored = JSON.parse(saved) as UIMessage[];
         this.messages = restored.map((msg: UIMessage): UIMessage => {
-          const fresh = toAgentMessage(msg.content, msg.isSuggestion, msg.id, msg.plan);
+          // Older records have no origin flag: id 0 is the fixed greeting and ⚠️ marks local errors.
+          const generated = msg.role === 'agent' &&
+            (msg.isAiGenerated ?? (msg.id !== 0 && !msg.content.startsWith('⚠️')));
+          const fresh = toAgentMessage(msg.content, msg.isSuggestion, msg.id, msg.plan, generated);
           return { id: msg.id, role: msg.role, content: fresh.content, lines: fresh.lines,
+            isAiGenerated: generated,
             isSuggestion: msg.isSuggestion, suggestionState: msg.suggestionState, plan: msg.plan, planId: msg.planId };
         });
       } catch (e) { console.error("聊天记录读取失败"); }
@@ -217,6 +226,7 @@ export struct AgentChat {
       role: 'user',
       content: userText,
       lines: [[{ type: 'text', text: userText, kc: -1 }]],
+      isAiGenerated: false,
       isSuggestion: false,
       suggestionState: 'none',
       plan: [],
@@ -238,7 +248,7 @@ export struct AgentChat {
     } catch (e) {
       const msg = (e as Error).message || '请求失败';
       this.messages.push(toAgentMessage('⚠️ ' + msg + '\n\n请确认后端服务已启动、网络连通。', false,
-        this.nextMessageId++));
+        this.nextMessageId++, [], false));
     } finally {
       this.isLoading = false;
       AppStorage.setOrCreate("chat_" + this.courseId, JSON.stringify(this.messages));
@@ -303,15 +313,26 @@ export struct AgentChat {
     Column() {
       Column() {
         this.PageHeader()
-        if (!this.intakeDone) {
-          this.IntakePanel()
-        } else {
-          this.IntakeSummary()
-        }
-        this.ChatArea()
-        this.InputArea()
+        Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Row : FlexDirection.Column }) {
+          Scroll() {
+            Column() {
+              if (!this.intakeDone) {
+                this.IntakePanel()
+              } else {
+                this.IntakeSummary()
+              }
+            }.width('100%')
+          }
+          .width(AdaptiveLayout.split(this.contentWidth) ? 320 : '100%')
+          .constraintSize({ maxHeight: AdaptiveLayout.split(this.contentWidth) ? '100%' : '42%' })
+          .flexShrink(0).scrollBar(BarState.Auto)
+          Column() {
+            this.ChatArea()
+            this.InputArea()
+          }.layoutWeight(1).width('100%').height('100%')
+        }.width('100%').layoutWeight(1)
       }
-      .width('100%')
+      .width('100%').constraintSize({ maxWidth: 1440 })
       .height('100%')
       .backgroundColor($r('app.color.page_background'))
     }
@@ -333,6 +354,7 @@ export struct AgentChat {
       }
       .margin({ left: 12 })
       .alignItems(HorizontalAlign.Start)
+      .layoutWeight(1)
 
       Blank()
 
@@ -363,14 +385,15 @@ export struct AgentChat {
         .fontColor($r('app.color.text_secondary'))
         .width('100%')
         .margin({ bottom: 6 })
-      Row({ space: 8 }) {
+      Flex({ wrap: FlexWrap.Wrap }) {
         ForEach(AppState.isDsa() ? ['刚接触 Java', '掌握 Java 基础', '学过数据结构'] : GRADES, (g: string) => {
           Text(g)
             .fontSize(13)
             .fontColor(this.intakeGrade === g ? Color.White : $r('app.color.brand'))
             .padding({ left: 14, right: 14, top: 7, bottom: 7 })
             .backgroundColor(this.intakeGrade === g ? $r('app.color.brand_solid') : $r('app.color.brand_tint'))
-            .borderRadius(16)
+            .borderRadius(16).margin({ right: 8, bottom: 8 })
+            .focusable(true).hoverEffect(HoverEffect.Auto)
             .onClick(() => {
               this.intakeGrade = g;
             })
@@ -384,14 +407,15 @@ export struct AgentChat {
         .fontColor($r('app.color.text_secondary'))
         .width('100%')
         .margin({ bottom: 6 })
-      Row({ space: 8 }) {
+      Flex({ wrap: FlexWrap.Wrap }) {
         ForEach(AppState.isDsa() ? ['线性结构', '树与图', '查找排序', '综合练习'] : GOALS, (g: string) => {
           Text(g)
             .fontSize(13)
             .fontColor(this.intakeGoal === g ? Color.White : $r('app.color.brand'))
             .padding({ left: 14, right: 14, top: 7, bottom: 7 })
             .backgroundColor(this.intakeGoal === g ? $r('app.color.brand_solid') : $r('app.color.brand_tint'))
-            .borderRadius(16)
+            .borderRadius(16).margin({ right: 8, bottom: 8 })
+            .focusable(true).hoverEffect(HoverEffect.Auto)
             .onClick(() => {
               this.intakeGoal = g;
             })
@@ -405,14 +429,15 @@ export struct AgentChat {
         .fontColor($r('app.color.text_secondary'))
         .width('100%')
         .margin({ bottom: 6 })
-      Row({ space: 8 }) {
+      Flex({ wrap: FlexWrap.Wrap }) {
         ForEach(TIMES, (g: string) => {
           Text(g)
             .fontSize(13)
             .fontColor(this.intakeTime === g ? Color.White : $r('app.color.brand'))
             .padding({ left: 14, right: 14, top: 7, bottom: 7 })
             .backgroundColor(this.intakeTime === g ? $r('app.color.brand_solid') : $r('app.color.brand_tint'))
-            .borderRadius(16)
+            .borderRadius(16).margin({ right: 8, bottom: 8 })
+            .focusable(true).hoverEffect(HoverEffect.Auto)
             .onClick(() => {
               this.intakeTime = g;
             })
@@ -453,7 +478,7 @@ export struct AgentChat {
 
   @Builder
   IntakeSummary() {
-    Row() {
+    Flex({ direction: AdaptiveLayout.split(this.contentWidth) ? FlexDirection.Column : FlexDirection.Row }) {
       Text(`摸底：${this.intakeGrade} · ${this.intakeGoal} · ${this.intakeTime}`)
         .fontSize(12)
         .fontColor($r('app.color.text_secondary'))
@@ -492,7 +517,7 @@ export struct AgentChat {
       }
       .width('100%')
       .layoutWeight(1)
-      .scrollBar(BarState.Off)
+      .scrollBar(BarState.Auto)
     }
     .width('100%')
     .layoutWeight(1)
@@ -556,8 +581,10 @@ export struct AgentChat {
           .width(36)
           .height(36)
           .fill($r('app.color.surface'))
-        Text('🤖')
-          .fontSize(18)
+        SymbolGlyph($r('sys.symbol.intelligent'))
+          .fontSize(22)
+          .fontColor([$r('app.color.brand')])
+          .accessibilityText('知径学习助手')
       }
       .width(36)
       .height(36)
@@ -568,6 +595,13 @@ export struct AgentChat {
         ForEach(msg.lines, (segs: ChatSegment[], li: number) => {
           this.MessageLine(segs)
         }, (segs: ChatSegment[], li: number) => li.toString())
+        if (msg.isAiGenerated) {
+          Text('（本内容由ai生成）')
+            .fontSize(11)
+            .fontColor($r('app.color.danger'))
+            .width('100%')
+            .margin({ top: 8 })
+        }
         if (msg.isSuggestion && msg.suggestionState === 'pending') {
           Row({ space: 10 }) {
             Button('✓ 接受')
@@ -614,7 +648,7 @@ export struct AgentChat {
         offsetX: 0,
         offsetY: 2
       })
-      .constraintSize({ maxWidth: 280 })
+      .constraintSize({ maxWidth: AdaptiveLayout.split(this.contentWidth) ? 600 : (this.contentWidth >= 600 ? 440 : 280) })
       .layoutWeight(1)
       .alignItems(HorizontalAlign.Start)
     }
@@ -640,7 +674,7 @@ export struct AgentChat {
       })
       .borderRadius(18)
       .borderRadius({ topRight: 4 })
-      .constraintSize({ maxWidth: 260 })
+      .constraintSize({ maxWidth: AdaptiveLayout.split(this.contentWidth) ? 540 : (this.contentWidth >= 600 ? 400 : 260) })
       .layoutWeight(1)
 
       Stack() {
@@ -648,8 +682,10 @@ export struct AgentChat {
           .width(36)
           .height(36)
           .fill($r('app.color.divider'))
-        Text('🙋')
-          .fontSize(18)
+        SymbolGlyph($r('sys.symbol.person_fill'))
+          .fontSize(22)
+          .fontColor([$r('app.color.text_secondary')])
+          .accessibilityText('我的消息')
       }
       .width(36)
       .height(36)
@@ -679,6 +715,8 @@ export struct AgentChat {
           })
 
         Button(this.isLoading ? '⏳' : '➤')
+          .accessibilityText('发送消息，Ctrl 加 Alt 加 S')
+          .keyboardShortcut('s', [ModifierKey.CTRL, ModifierKey.ALT])
           .fontSize(14)
           .fontColor(Color.White)
           .padding(0)

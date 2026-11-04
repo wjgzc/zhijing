@@ -11,6 +11,7 @@ const PersistentStorage = {persistProp(key, value) {if (!storage.has(key)) stora
 function load(file, dependencies = {}, extra = {}) {
   const context = {exports:{}, AppStorage, PersistentStorage, console, ...extra,
     require(name) {
+      if (name.includes('/utils/AdaptiveLayout')) return load('entry/src/main/ets/utils/AdaptiveLayout.ets');
       const key = Object.keys(dependencies).find(key => name === key || name.includes(key));
       if (key) return dependencies[key];
       throw Error('Unexpected dependency: ' + name);
