@@ -1,6 +1,9 @@
 import { AdaptiveLayout } from '../utils/AdaptiveLayout';
 import { switchTab, openPractice } from '../utils/TabSwitch';
 import { AppState } from '../model/AppState';
+import { avatarInitial, UserProfile, UserProfileStore } from '../model/UserProfileStore';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
+import { promptAction } from '@kit.ArkUI';
 
 interface StudyTask {
   kc: number;
@@ -27,7 +30,9 @@ export struct ServiceWidget {
   @State username: string = '张三';
   @State grade: string = '大三';
   @State identity: string = '计算机科学与技术';
-  @State selectedAvatar: number = 0;
+  @State avatarFile: string = '';
+  @State avatarBusy: boolean = false;
+  @State avatarLoadFailed: boolean = false;
   @State showEditDialog: boolean = false;
   @State showAvatarDialog: boolean = false;
 
@@ -36,17 +41,83 @@ export struct ServiceWidget {
   @State editGrade: string = '';
   @State editIdentity: string = '';
 
-  // 头像颜色列表（6个备选）
-  private avatarColors: ResourceColor[] = [
-    $r('app.color.brand_solid'), '#BF3443', '#257449', '#946000', '#7850AA', '#087D79'
-  ];
-  // 头像对应首字母
-  private avatarInitials: string[] = [
-    '张', '李', '王', '赵', '孙', '周'
-  ];
+  private filesDir: string = '';
 
   aboutToAppear(): void {
+    const context = this.getUIContext().getHostContext();
+    if (context) {
+      this.filesDir = context.filesDir;
+      const profile = UserProfileStore.read(this.filesDir);
+      this.username = profile.username;
+      this.grade = profile.grade;
+      this.identity = profile.identity;
+      this.avatarFile = profile.avatarFile;
+      this.avatarLoadFailed = false;
+    }
     this.refresh();
+  }
+
+  private profile(avatarFile: string = this.avatarFile): UserProfile {
+    return { username: this.username, grade: this.grade, identity: this.identity, avatarFile: avatarFile };
+  }
+
+  private saveProfileChanges(): void {
+    const updated: UserProfile = {
+      username: this.editUsername.trim() || this.username,
+      grade: this.editGrade,
+      identity: this.editIdentity.trim() || this.identity,
+      avatarFile: this.avatarFile
+    };
+    try {
+      UserProfileStore.write(this.filesDir, updated);
+      this.username = updated.username;
+      this.grade = updated.grade;
+      this.identity = updated.identity;
+      this.editUsername = '';
+      this.editIdentity = '';
+      this.showEditDialog = false;
+    } catch (error) {
+      promptAction.showToast({ message: '资料保存失败，请重试' });
+    }
+  }
+
+  private async choosePhoto(): Promise<void> {
+    if (this.avatarBusy) { return; }
+    this.avatarBusy = true;
+    this.showAvatarDialog = false;
+    let imported = '';
+    try {
+      const options = new photoAccessHelper.PhotoSelectOptions();
+      options.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
+      options.maxSelectNumber = 1;
+      const result = await new photoAccessHelper.PhotoViewPicker().select(options);
+      if (result.photoUris.length === 0) { return; }
+      imported = await UserProfileStore.importPhoto(this.filesDir, result.photoUris[0]);
+      const previous = this.avatarFile;
+      UserProfileStore.write(this.filesDir, this.profile(imported));
+      this.avatarFile = imported;
+      this.avatarLoadFailed = false;
+      UserProfileStore.removePhoto(this.filesDir, previous);
+    } catch (error) {
+      if (imported.length > 0) { UserProfileStore.removePhoto(this.filesDir, imported); }
+      promptAction.showToast({ message: '头像更换失败，请重试' });
+    } finally {
+      this.avatarBusy = false;
+    }
+  }
+
+  private restoreDefaultAvatar(): void {
+    if (this.avatarBusy) { return; }
+    try {
+      const previous = this.avatarFile;
+      UserProfileStore.write(this.filesDir, this.profile(''));
+      this.avatarFile = '';
+      this.avatarLoadFailed = false;
+      this.showAvatarDialog = false;
+      UserProfileStore.removePhoto(this.filesDir, previous);
+    } catch (error) {
+      promptAction.showToast({ message: '头像保存失败，请重试' });
+    }
   }
 
   private refresh(): void {
@@ -129,24 +200,6 @@ export struct ServiceWidget {
       .scrollBar(BarState.Auto)
 
     }
-    .bindSheet($$this.showEditDialog, this.EditProfileDialog(), {
-      height: SheetSize.FIT_CONTENT,
-      preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
-      width: this.contentWidth >= 600 ? 480 : '100%',
-      showClose: true,
-      dragBar: true,
-      title: { title: '修改个人信息' },
-      backgroundColor: $r('app.color.surface')
-    })
-    .bindSheet($$this.showAvatarDialog, this.AvatarPickerDialog(), {
-      height: SheetSize.FIT_CONTENT,
-      preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
-      width: this.contentWidth >= 600 ? 480 : '100%',
-      showClose: true,
-      dragBar: true,
-      title: { title: '选择头像' },
-      backgroundColor: $r('app.color.surface')
-    })
   }
 
   // ======================== 页面头部 ========================
@@ -172,19 +225,37 @@ export struct ServiceWidget {
       Column() {
         // 圆形头像
         Column() {
-          Text(this.avatarInitials[this.selectedAvatar])
-            .fontSize(32)
-            .fontColor(Color.White)
-            .fontWeight(FontWeight.Bold)
+          if (this.avatarFile.length > 0 && !this.avatarLoadFailed) {
+            Image('file://' + this.filesDir + '/' + this.avatarFile)
+              .width(72).height(72).objectFit(ImageFit.Cover)
+              .onError(() => { this.avatarLoadFailed = true; })
+          } else {
+            Text(avatarInitial(this.username))
+              .fontSize(32)
+              .fontColor(Color.White)
+              .fontWeight(FontWeight.Bold)
+          }
         }
         .width(72)
         .height(72)
         .borderRadius(36)
-        .backgroundColor(this.avatarColors[this.selectedAvatar])
+        .backgroundColor($r('app.color.brand_solid'))
+        .clip(true)
+        .enabled(!this.avatarBusy)
+        .accessibilityText('头像，点击更换')
         .justifyContent(FlexAlign.Center)
         .alignItems(HorizontalAlign.Center)
         .onClick(() => {
           this.showAvatarDialog = true;
+        })
+        .bindSheet($$this.showAvatarDialog, this.AvatarPickerDialog(), {
+          height: SheetSize.FIT_CONTENT,
+          preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
+          width: this.contentWidth >= 600 ? 480 : '100%',
+          showClose: true,
+          dragBar: true,
+          title: { title: '选择头像' },
+          backgroundColor: $r('app.color.surface')
         })
         .shadow({
           radius: 8,
@@ -193,7 +264,7 @@ export struct ServiceWidget {
           offsetY: 4
         })
 
-        Text('点击更换头像')
+        Text(this.avatarBusy ? '正在保存头像…' : '点击更换头像')
           .fontSize(11)
           .fontColor('rgba(255,255,255,0.7)')
           .margin({ top: 6 })
@@ -238,6 +309,16 @@ export struct ServiceWidget {
           this.editIdentity = '';
           this.editGrade = this.grade;
           this.showEditDialog = true;
+        })
+        // Each sheet has its own host so the avatar sheet cannot replace the editor binding.
+        .bindSheet($$this.showEditDialog, this.EditProfileDialog(), {
+          height: SheetSize.FIT_CONTENT,
+          preferType: this.contentWidth >= 600 ? SheetType.CENTER : SheetType.BOTTOM,
+          width: this.contentWidth >= 600 ? 480 : '100%',
+          showClose: true,
+          dragBar: true,
+          title: { title: '修改个人信息' },
+          backgroundColor: $r('app.color.surface')
         })
     }
     .width('100%')
@@ -345,18 +426,7 @@ export struct ServiceWidget {
             .height(40)
             .layoutWeight(1)
             .onClick(() => {
-              // 若用户未输入新内容，则保留原信息
-              if (this.editUsername.trim() !== '') {
-                this.username = this.editUsername.trim();
-              }
-              if (this.editIdentity.trim() !== '') {
-                this.identity = this.editIdentity.trim();
-              }
-              this.grade = this.editGrade;
-              // 重置编辑临时变量
-              this.editUsername = '';
-              this.editIdentity = '';
-              this.showEditDialog = false;
+              this.saveProfileChanges();
             })
         }
         .width('100%')
@@ -369,64 +439,24 @@ export struct ServiceWidget {
   // ======================== 头像选择弹窗 ========================
   @Builder
   AvatarPickerDialog() {
-      Column() {
-
-        // 头像网格（3列2行 = 6个备选头像）
-        Grid() {
-          ForEach(this.avatarColors, (color: string, index: number) => {
-            GridItem() {
-              Column() {
-                Column() {
-                  Text(this.avatarInitials[index])
-                    .fontSize(28)
-                    .fontColor(Color.White)
-                    .fontWeight(FontWeight.Bold)
-                }
-                .width(60)
-                .height(60)
-                .borderRadius(30)
-                .backgroundColor(color)
-                .justifyContent(FlexAlign.Center)
-                .alignItems(HorizontalAlign.Center)
-                .border({
-                  width: this.selectedAvatar === index ? 3 : 0,
-                  color: '#3B7DD8',
-                  style: BorderStyle.Solid
-                })
-
-                Text(this.avatarInitials[index])
-                  .fontSize(11)
-                  .fontColor($r('app.color.text_secondary'))
-                  .margin({ top: 6 })
-              }
-              .alignItems(HorizontalAlign.Center)
-              .onClick(() => {
-                this.selectedAvatar = index;
-              })
-            }
-          })
-        }
-        .columnsTemplate('1fr 1fr 1fr')
-        .rowsTemplate('1fr 1fr')
-        .columnsGap(16)
-        .rowsGap(16)
-        .width('100%')
-        .height(200)
-        .margin({ bottom: 16 })
-
-        Button('确定')
-          .fontSize(15)
-          .fontColor(Color.White)
-          .backgroundColor('#3B7DD8')
-          .borderRadius(20)
-          .height(42)
-          .width('60%')
-          .onClick(() => {
-            this.showAvatarDialog = false;
-          })
-      }
-      .width('100%')
-      .padding({ left: 24, right: 24, top: 8, bottom: 24 })
+    Column({ space: 12 }) {
+      Text('默认头像使用昵称首字，也可以选择相册照片。')
+        .fontSize(13).fontColor($r('app.color.text_secondary')).width('100%')
+      Button('从相册选照片')
+        .width('100%').height(46).fontSize(15)
+        .backgroundColor($r('app.color.brand_solid')).fontColor(Color.White)
+        .enabled(!this.avatarBusy)
+        .onClick(() => { this.choosePhoto(); })
+      Button('恢复默认头像')
+        .width('100%').height(46).fontSize(15)
+        .backgroundColor($r('app.color.surface_subtle')).fontColor($r('app.color.brand'))
+        .enabled(!this.avatarBusy && this.avatarFile.length > 0)
+        .onClick(() => { this.restoreDefaultAvatar(); })
+      Button('取消')
+        .width('100%').height(42).fontSize(14)
+        .backgroundColor(Color.Transparent).fontColor($r('app.color.text_secondary'))
+        .onClick(() => { this.showAvatarDialog = false; })
+    }.width('100%').padding({ left: 24, right: 24, top: 8, bottom: 24 })
   }
 
   // ======================== 年级列表 ========================
